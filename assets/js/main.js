@@ -226,7 +226,14 @@ function toggleVideo(){
 } 
 
 
-function rangeSlider(){
-  document.getElementById('interest-rate').textContent = document.getElementById('customRange3').value;
+function moreScheme(e){
+   var moreBtn = document.getElementById('scheme-more-btn');
+   var exampCont = document.getElementById('scheme-examples');
+
+   if(exampCont.style.display == 'none'){
+      exampCont.style.display = 'block';
+   }else{
+      exampCont.style.display = 'none';
+   }
 }
 
