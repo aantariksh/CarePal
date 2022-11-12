@@ -470,6 +470,7 @@ h6 {
   width: 100%;
 }
 .hero-main{
+  margin-top:70px;
   height: 500px;
   background: transparent url('../img/banner/hero-banner.png') 0% 0% no-repeat padding-box;
   /* background: url("../img/banner/hero-banner.png") top center; */
@@ -480,7 +481,7 @@ h6 {
 .hero-det{
   position: absolute;
   top: 50%;
-  transform: translateY(-40%);
+  transform: translateY(-50%);
   right:-25%;
   max-width: 615px;
   /* max-height: 407px; */
@@ -520,7 +521,7 @@ h6 {
 
 @media (max-width: 992px) {
   #hero {
-    height: 90vh;
+    height: 110vh;
   }
   #prod-hero {
     height: 126vh;
@@ -834,6 +835,7 @@ h6 {
   width: 100%;
 }
 .prod-hero-main{
+  margin-top:70px;
   height: 530px;
   background: transparent url('../img/banner/prod-banner.png') 0% 0% no-repeat padding-box;
   /* background: url("../img/banner/hero-banner.png") top center; */
@@ -991,6 +993,38 @@ h6 {
   width: 88% !important;
 }
 
+.calc-field input{
+  -webkit-appearance: none;
+  width: 92%;
+  height: 8px;
+  border-radius: 8px;
+  outline: none;
+  border:none;  
+  background-color: rgba(28, 117, 188, .1);
+}
+/* #calc-slider1{
+  background: linear-gradient( to right, #1E75BB 50%, rgba(28, 117, 188, .1) 40%); 
+}
+#calc-slider2{
+  background: linear-gradient( to right, #1E75BB 50%, rgba(28, 117, 188, .1) 40%); 
+}
+#calc-slider3{
+  background: linear-gradient( to right, #1E75BB 50%, rgba(28, 117, 188, .1) 40%); 
+} */
+.calc-field input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 22px;
+  width: 22px;
+  background-color: rgba(30, 117, 187, 1);
+  border-radius: 50%;
+  border: 4px solid #fff;
+  cursor: pointer;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.calc-field input::-moz-range-progress{
+  background-color: #16507b;
+}
+
 @media (max-width: 480px) {
   .calc-amt-box{
     min-width: 135px;
@@ -1024,11 +1058,14 @@ h6 {
   font: normal normal 300 16px/25px Roboto;
   color: rgba(75, 75, 75, 0.8);
 }
+#scheme-examples{
+  display: none;
+}
 
-/* ---------------------- FAQ ---------------------------------*/
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
+
 .faq{
   background-color: #F8F8F8;
 }
@@ -1109,6 +1146,98 @@ h6 {
 }
 
 
+.about-hero-main{
+  height: 367px;
+  background: transparent url('../img/banner/about-banner.png') 0% 0% no-repeat padding-box;
+  /* background: url("../img/banner/hero-banner.png") top center; */
+  position: relative;
+  background-size: cover;
+}
+
+.cpal-about-img>img{
+  max-width: 500px;
+  height: 500px;
+  background-size: cover;
+}
+.team-item>img{
+  width: 291px;
+  height: 312px;
+  border-radius: 8px;
+}
+.team-item>div>h3{
+  font: normal normal bold 19px/23px Roboto;
+  color: #5D5D5D;
+}
+.bi-linkedin::before {
+  display: none !important;
+}
+
+.ptr-item-wrap{
+  display: flex; 
+  flex-wrap: wrap;
+}
+.ptnr-item{
+  width: 395px;
+}
+.ptnr-item>div{
+  width: 291px;
+}
+.ptnr-item>div>img{
+  width: 200px;
+  height: 80px;
+}
+.ptnr-item a{
+  display: block;
+  width: 290px;
+  height: 56px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 2px solid #E28F20;
+  border-radius: 8px;
+  margin-top: 20px;
+  font: normal normal bold 20px/56px Roboto;
+  color: #E28F20;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .team-item>img{
+    width: 165px;
+    height: 177px;
+  }
+  .team-item>div>h3{
+    font: normal normal bold 19px/23px Roboto;
+  }
+  .team-item>div>p{
+    font: normal normal normal 16px/23px Roboto;
+    color: #5D5D5D;
+  }
+  .team-item>div>a>svg{
+    width: 28px;
+    height: 28px;
+  }
+  .cpal-about-img{
+    display: none;
+  }
+
+  .ptnr-item{
+    width: 195px;
+  }
+  .ptnr-item>div{
+    width: 195px;
+  }
+  .ptnr-item>div>img{
+    width: 164px;
+    height: 70px;
+  }
+  .ptnr-item a{
+    display: block;
+    width: 195px;
+    height: 44px;
+    font: normal normal bold 16px/44px Roboto;
+  }
+  
+}
 
 /*--------------------------------------------------------------
 # Footer

@@ -229,11 +229,25 @@ function toggleVideo(){
 function moreScheme(e){
    var moreBtn = document.getElementById('scheme-more-btn');
    var exampCont = document.getElementById('scheme-examples');
-
-   if(exampCont.style.display == 'none'){
-      exampCont.style.display = 'block';
-   }else{
+  
+    if( exampCont && exampCont.style.display == 'block')    
       exampCont.style.display = 'none';
-   }
+    else 
+      exampCont.style.display = 'block';
 }
 
+function calcSlider(){
+   var mySlider1 = document.getElementById('calc-slider1');
+   var mySlider2 = document.getElementById('calc-slider2');
+   var mySlider3 = document.getElementById('calc-slider3');
+   var myValue = document.getElementById('calc-value');
+
+   var percent1 = (mySlider1.value / mySlider1.max)*100;
+   var percent2 = (mySlider2.value / mySlider2.max)*100;
+   var percent3 = (mySlider3.value / mySlider3.max)*100;
+
+   mySlider1.style.background = `linear-gradient( to right, #1E75BB ${percent1}%, rgba(28, 117, 188, .1) ${percent1}%)`;
+   mySlider2.style.background = `linear-gradient( to right, #1E75BB ${percent2}%, rgba(28, 117, 188, .1) ${percent2}%)`;
+   mySlider3.style.background = `linear-gradient( to right, #1E75BB ${percent3}%, rgba(28, 117, 188, .1) ${percent3}%)`;
+   myValue.innerText = mySlider1.value;
+}
