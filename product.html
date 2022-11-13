@@ -18,11 +18,9 @@
     rel="stylesheet" />
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
@@ -31,7 +29,7 @@
 </head>
 
 <body>
-  <!-- ======= Header ======= -->
+  <!-- ======= Header For Mobile And Desktop ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo"><img src="assets/img/logo/logo-header.png" width="140" height="55" alt=""
@@ -46,7 +44,7 @@
             <a class="nav-link active" href="./product.html"><span>Product</span></a>
           </li>
           <li>
-            <a class="nav-link" href=""><span>About Us</span></a>
+            <a class="nav-link" href="./about.html"><span>About Us</span></a>
           </li>
           <li>
             <a class="nav-link" href=""><span>Contact Us</span></a>
@@ -66,17 +64,17 @@
       <!-- .navbar -->
     </div>
   </header>
-  <!-- End Header -->
+  <!--=======  End Header =======-->
 
-  <!-- ======= Hero Section ======= -->
+  <!-- ======= Product Hero Section ======= -->
   <div id="prod-hero">
     <div class="position-relative">
       <div class="prod-hero-main col-sm-12 col-lg-9">
+        <!-- ======= Hero Section Form ======= -->
         <form class="hero-det bg-white p-4">
-          <h1 class="fs-3 fw-bold prod-cont-head">
+          <h1 class="prod-form-head">
             Avail Quick Loans With CarePal Money!
           </h1>
-
           <div class="contact-form prod-form row my-0">
             <div class="form-field col-lg-6 my-3">
               <input type="text" id="name" class="prod-input-text" name="" placeholder=" " />
@@ -112,17 +110,20 @@
 
             <div class="mt-2 ps-0 text-center">
               <button type="button" class="btn-apply btn text-white fw-bold col-sm-12">
-                Apply Now
+                Submit
               </button>
             </div>
           </div>
         </form>
+        <!-- ====== End Form ======= -->
       </div>
     </div>
   </div>
-  <!-- End Hero -->
+  <!-- ======= End Hero Section ======= --> 
 
+  <!-- ======= Product Main Body Sections ======= -->
   <main id="main">
+    <!-- ======= Loan Info Paragraph ======= -->
     <div class="prod-loan-info container py-4 text-center">
       <p>
         Loan tenure from 3-60 months with monthly interest varying from 1.33%
@@ -135,6 +136,7 @@
       </p>
     </div>
 
+    <!-- ======= Product Main Navlist ======= -->
     <nav id="navbar-example2" class="navbar prod-nav-list">
       <ul class="nav prod-nav d-flex flex-nowrap justify-content-evenly ">
         <li class="nav-item py-2">
@@ -147,95 +149,103 @@
           <a class="nav-link" href="#scrollspyHeading3">Schemes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading2">Emi Calculator</a>
+          <a class="nav-link" href="#scrollspyHeading4">Emi Calculator</a>
         </li>
         <li class="nav-item pe-4">
           <a class="nav-link" href="#scrollspyHeading5">FAQs</a>
         </li>
       </ul>
     </nav>
+    <!-- ======= End Main Navlist ======= -->
+    
+    <!-- ======= Navlist Items ======= -->
     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
       tabindex="0">
+
+      <!-- ======= Product Eligible Section ======= -->
       <section id="scrollspyHeading1">
         <div id="prod-elig">
           <div class="container py-5">
-            <h1 class="fs-2 fw-bold prod-cont-head">Are You Eligible?</h1>
+            <h1 class="cpal-main-head">Are You Eligible?</h1>
             <p>
               Given below are the eligibility requirements to avail loans at
               CarePal Money
             </p>
-
+            <!-- ======= Eligible Items ======= -->
             <div class="d-flex justify-content-center col-12">
               <div class="prod-elig-items row col-sm-10 col-12 d-flex justify-content-between">
                 <div class="col-5 py-3 px-0">
                   <div class="d-sm-flex align-items-center">
-                    <img src="./assets/img/demo/prod-elig-item.png" width="40" height="50" alt="" />
+                    <img src="./assets/img/demo/prod-elig-item.png" alt="" />
                     <div class="ms-sm-3 pt-2">
-                      <h3 class="fs-4 fw-bold">Nationality</h3>
+                      <h3>Nationality</h3>
                       <p class="mb-0">Indian</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-5 py-3 px-0">
                   <div class="d-sm-flex align-items-center">
-                    <img src="./assets/img/demo/prod-elig-item.png" width="40" height="50" alt="" />
+                    <img src="./assets/img/demo/prod-elig-item.png" alt="" />
                     <div class="ms-sm-3 pt-2">
-                      <h3 class="fs-4 fw-bold">Age</h3>
-                      <p class="mb-0">Indian</p>
+                      <h3>Age</h3>
+                      <p class="mb-0">23 to 65 Years</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-5 py-3 px-0">
                   <div class="d-sm-flex align-items-center">
-                    <img src="./assets/img/demo/prod-elig-item.png" width="40" height="50" alt="" />
+                    <img src="./assets/img/demo/prod-elig-item.png" alt="" />
                     <div class="ms-sm-3 pt-2">
-                      <h3 class="fs-4 fw-bold">Residency Type</h3>
-                      <p class="mb-0">Indian</p>
+                      <h3>Residency Type</h3>
+                      <p class="mb-0">Owned or Rented</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-5 py-3 px-0">
                   <div class="d-sm-flex align-items-center">
-                    <img src="./assets/img/demo/prod-elig-item.png" width="40" height="50" alt="" />
+                    <img src="./assets/img/demo/prod-elig-item.png" alt="" />
                     <div class="ms-sm-3 pt-2">
-                      <h3 class="fs-4 fw-bold">Credit Score</h3>
-                      <p class="mb-0">Indian</p>
+                      <h3>Credit Score</h3>
+                      <p class="mb-0">650 or higher</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-5 py-3 px-0">
                   <div class="d-sm-flex d-block align-items-center">
-                    <img src="./assets/img/demo/prod-elig-item.png" width="40" height="50" alt="" />
+                    <img src="./assets/img/demo/prod-elig-item.png" alt="" />
                     <div class="ms-sm-3 pt-2">
-                      <h3 class="fs-4 fw-bold">Employment Type</h3>
-                      <p class="mb-0">Indian</p>
+                      <h3>Employment Type</h3>
+                      <p class="mb-0">Salarird, Self-Employed</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-5 py-3 px-0">
                   <div class="d-sm-flex align-items-center">
-                    <img src="./assets/img/demo/prod-elig-item.png" width="40" height="50" alt="" />
+                    <img src="./assets/img/demo/prod-elig-item.png" alt="" />
                     <div class="ms-sm-3 pt-2">
-                      <h3 class="fs-4 fw-bold">Monthly Income</h3>
-                      <p class="mb-0">Indian</p>
+                      <h3>Monthly Income</h3>
+                      <p class="mb-0">Inr 18000 or higher</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 py-3 px-0">
                   <div class="d-sm-flex align-items-center">
-                    <img src="./assets/img/demo/prod-elig-item.png" width="40" height="50" alt="" />
+                    <img src="./assets/img/demo/prod-elig-item.png" alt="" />
                     <div class="ms-sm-3 pt-2">
-                      <h3 class="fs-4 fw-bold">Work Experience / Business</h3>
-                      <p class="mb-0">Indian</p>
+                      <h3>Work Experience / Business</h3>
+                      <p class="mb-0">Continuity 1 year</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- ======= End Eligible Items ======= -->
           </div>
         </div>
       </section>
+      <!-- ======= End Eligible Section ======= -->
 
+      <!-- ======= Why CarePal Section ======= -->
       <section id="scrollspyHeading2">
         <div id="cpal-why">
           <div class="cpal-why-cont container">
@@ -243,10 +253,11 @@
               <div class="col-lg-5 col-md-12 col-sm-12 mb-md-5 cpal-why-img">
                 <img width="500" height="500" src="./assets/img/why_carepal/why-cpal-phone.png" alt="" />
               </div>
-              <div class="col-lg-6 col-md-12 col-sm-12 cpal-why-item">
-                <h1 class="fs-2 ps-3 fw-bold">Why CarePal Money?</h1>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <h1 class="cpal-main-head">Why CarePal Money?</h1>
 
-                <div class="my-5 d-flex justify-content-between flex-wrap">
+                <!-- ======= CarePal Features ======= -->
+                <div class="my-5 d-flex justify-content-between flex-wrap cpal-why-items">
                   <div class="mb-4 d-flex">
                     <img src="./assets/img/demo/why-icon1.png" width="50" height="50" alt="" />
                     <span class="ps-2">Hassle Free Approval</span>
@@ -272,26 +283,33 @@
                     <span class="ps-2">Easy Online Installments</span>
                   </div>
                 </div>
+                <!-- ======= End Features ======= -->
 
-                <div class="mt-2 ps-0">
+                <!-- ======= Apply Btn ======= -->
+                <div class="ps-0">
                   <button type="button" class="btn-apply btn text-white fw-bold col-sm-12">
                     Apply Now
                   </button>
                 </div>
+                <!-- ======= Apply Btn ======= -->
               </div>
             </div>
           </div>
         </div>
       </section>
-      
-      <section id="scrollspyHeading5">
+      <!-- ======= End Why Section ======= -->
+
+      <!-- ======= CarePal Scheme Section ======= -->
+      <section id="scrollspyHeading3">
         <div id="prod-calc-emi" class="prod-calc-emi bg-light py-5">
           <div class="container">
             <div class="row">
               <div class="mb-4">
-                <h1 class="fs-2 fw-bold prod-cont-head">CarePal Money Schemes</h1>
+                <h1 class="cpal-main-head">CarePal Money Schemes</h1>
                 <p>Choose from a variety of flexible and customized lending schemes here:</p>
               </div>
+
+              <!-- ======= Scheme Table ======= -->
               <div class="d-flex justify-content-center">
                 <div class="col-lg-10">
                   <table class="table text-center cpal-scheme border-ro">
@@ -343,73 +361,81 @@
                     </tbody>
                   </table>
   
-                  <div class="d-flex justify-content-between cpal-scheme-det">
-                    <div>
+                  <div class="cpal-scheme-det">
+                    <div class="py-2">
                       <p>*To be paid by the customer to the hospital.</p>
                       <p>**To be paid by the customer to NBFCs.</p>
                       <p>Disclaimer - changes subject to schemes being available in the hospital.</p>
                     </div>
-                    <a href="javascript:void(0);" id="scheme-more-btn" onclick="moreScheme()">Click here for more details <i>^</i></a>
+                    <button id="scheme-more-btn" onclick="moreScheme()">Click here for more details <i class="bi bi-chevron-up"></i></button>
                   </div>
                 </div>
               </div>
-              
+              <!-- ======= End Scheme Table ======= -->
+
+              <!-- ======= Scheme Examples ======= -->
               <div class="mt-5" id="scheme-examples">
                 <div class="mb-4">
-                  <h1 class="fs-5 fw-bold prod-cont-head">Examples</h1>
+                  <h1 class="fs-5 fw-bold">Examples</h1>
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="col-lg-8">
+                    <!-- ======= Example Table 1 ======= -->
                     <div class="text-center mt-4 mb-3 fw-bold">Example 1</div>
                     <table class="table text-center cpal-scheme border-ro">
                       <thead>
                         <tr>
-                          <th scope="col">Scheme</th>
-                          <th scope="col">Tenure(in months)</th>
-                          <th scope="col">Advance EMI*</th>
-                          <th scope="col">Remaining EMI**</th>
+                          <th scope="col">Sr. no.</th>
+                          <th scope="col">Particulars</th>
+                          <th scope="col">Amount</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td scope="row">4/1</td>
+                          <td scope="row">a</td>
+                          <td>Loan Amount</td>
+                          <td>₹1,20,000</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">a</td>
+                          <td>₹10,000</td>
+                          <td>12/4</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">c</td>
+                          <td>EMI to customer for 1 month (a/12)</td>
+                          <td>₹10,000</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">d</td>
+                          <td>Advance EMI to be paid by customer to hospital</td>
                           <td>4</td>
-                          <td>1</td>
-                          <td>3</td>
                         </tr>
                         <tr>
-                          <td scope="row">6/1</td>
-                          <td>6</td>
-                          <td>1</td>
-                          <td>5</td>
+                          <td scope="row">e</td>
+                          <td>Advance EMI to be paid by customer to hospital (c*e)</td>
+                          <td>₹40,000</td>
                         </tr>
                         <tr>
-                          <td scope="row">9/3</td>
-                          <td>9</td>
-                          <td>3</td>
-                          <td>6</td>
-                        </tr>
-                        <tr>
-                          <td scope="row">12/4</td>
-                          <td>12</td>
-                          <td>4</td>
+                          <td scope="row">f</td>
+                          <td>Remaining EMI to be paid by customer to lender</td>
                           <td>8</td>
                         </tr>
                         <tr>
-                          <td scope="row">18/6</td>
-                          <td>18</td>
-                          <td>6</td>
-                          <td>12</td>
+                          <td scope="row">g</td>
+                          <td>Remaining EMI to be paid by customer to lender (c*f)</td>
+                          <td>₹ 80,000</td>
                         </tr>
                         <tr>
-                          <td scope="row">24/9</td>
-                          <td>24</td>
-                          <td>9</td>
-                          <td>15</td>
+                          <td scope="row">h</td>
+                          <td>Total repayment by the customer (e+g)</td>
+                          <td>₹1,20,000</td>
                         </tr>
                       </tbody>
                     </table>
+                    <!-- ======= End Example Table 1 ======= -->
 
+                    <!-- ======= Example Table 2 ======= -->
                     <div class="text-center mt-4 mb-3  fw-bold">Example 2</div>
                     <table class="table text-center cpal-scheme border-ro">
                       <thead>
@@ -422,126 +448,153 @@
                       <tbody>
                         <tr>
                           <td scope="row">a.</td>
-                          <td>Scheme</td>
-                          <td>1,20,000</td>
+                          <td>Loan Amount</td>
+                          <td>₹40,000</td>
                         </tr>
                         <tr>
                           <td scope="row">b.</td>
                           <td>Scheme</td>
-                          <td>12/4</td>
+                          <td>4/1</td>
                         </tr>
                         <tr>
                           <td scope="row">c.</td>
                           <td>EMI to customer for 1 month (a/12)</td>
-                          <td>10,000</td>
+                          <td>₹10,000</td>
                         </tr>
                         <tr>
-                          <td scope="row">12/4</td>
-                          <td>4</td>
-                          <td>8</td>
+                          <td scope="row">d</td>
+                          <td>Advance EMI to be paid by customer to hospital</td>
+                          <td>1</td>
                         </tr>
                         <tr>
-                          <td scope="row">18/6</td>
-                          <td>18</td>
-                          <td>6</td>
+                          <td scope="row">e</td>
+                          <td>Advance EMI to be paid by customer to hospital (c*e)</td>
+                          <td>₹10,000</td>
                         </tr>
                         <tr>
-                          <td scope="row">24/9</td>
-                          <td>24</td>
-                          <td>9</td>
+                          <td scope="row">f</td>
+                          <td>Remaining EMI to be paid by customer to lender</td>
+                          <td>3</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">g</td>
+                          <td>Remaining EMI to be paid by customer to lender (c*f)</td>
+                          <td>₹30,000</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">h</td>
+                          <td>Total repayment by the customer (e+g)</td>
+                          <td>₹40,000</td>
                         </tr>
                       </tbody>
-                    </table>  
+                    </table> 
+                    <!-- ======= End Example Table 2 ======= --> 
                   </div>
                 </div>
               </div>
-              
+              <!-- ======= End Scheme Examples ======= -->
 
             </div>
           </div>
         </div>
       </section>
+      <!-- ======= End CarePal Scheme Section ======= -->
 
-      <section id="scrollspyHeading5">
+      <!-- ======= Calculate EMI Section ======= -->
+      <section id="scrollspyHeading4">
         <div id="prod-calc-emi" class="prod-calc-emi py-3">
           <div class="container">
-            <h1 class="fs-2 fw-bold prod-cont-head">
+            <h1 class="cpal-main-head">
               Calculate Your Loan EMI
             </h1>
             <div class="row mt-5">
+              <!-- ======= EMI Calculate Box ======= -->
               <div class="col-lg-8 col-sm-12 mb-3">
                 <div class="calc-box p-4">
+                  <!-- ======= EMI Amount ======= -->
                   <div class="emi-calc-item">
                     <div class="d-flex align-items-center justify-content-between mb-3">
                       <p>Loan Amount</p>
                       <div class="calc-amt-box">
-                        <span class="border-end border-2 px-3">R</span>
-                        <span class="px-2" id="calc-value">XYZ, 12, 123</span>
+                        <span class="border-end border-2 px-3"><i class="bi bi-currency-rupee"></i></span>
+                        <span class="px-2" id="calc-value1">XYZ, 12, 123</span>
                       </div>
                     </div>
 
-                    <div class="">
+                    <div>
                         <div class="calc-field d-flex align-items-center justify-content-between">
-                            <div class="value left">0</div>
-                            <input type="range" id="calc-slider1" min="0" max="2500000" value="0" step="10000"  oninput="calcSlider()">
-                            <div class="value right">25L</div>
+                            <div class="value-left">0</div>
+                            <input type="range" id="calc-slider1" min="0" max="2500000" value="10000" step="10000"  oninput="calcSlider()">
+                            <div class="value-right">25L</div>
                         </div>
                     </div>
                   </div>
+                  <!-- ======= End Amount ======= -->
+
+                  <!-- ======= EMI Tenor ======= -->
                   <div class="emi-calc-item mt-3">
                     <div class="d-flex align-items-center justify-content-between mb-3">
                       <p>Tenor</p>
                       <div class="calc-amt-box">
-                        <span class="border-end border-2 px-3">14</span>
+                        <span class="border-end border-2 px-3" id="calc-value2">12</span>
                         <span class="px-2">Months</span>
                       </div>
                     </div>
-                    <div class="">
+                    <div>
                       <div class="calc-field d-flex align-items-center justify-content-between">
-                        <div class="value left">12M</div>
-                        <input type="range" id="calc-slider2" min="0" max="12" value="0" step="1"  oninput="calcSlider()">
-                        <div class="value right">24M</div>
+                        <div class="value-left">12M</div>
+                        <input type="range" id="calc-slider2" min="12" max="24" value="12" step="1"  oninput="calcSlider()">
+                        <div class="value-right">24M</div>
                     </div>
                     </div>
                   </div>
+                  <!-- ======= End Tenor ======= -->
+
+                  <!-- ======= EMI Interest ======= -->
                   <div class="emi-calc-item mt-3">
                     <div class="d-flex align-items-center justify-content-between mb-3">
                       <p>Interest Rate</p>
                       <div class="calc-amt-box px-2">
-                        <span class="px-2 w-75 d-inline-block" id="interest-rate">16.25</span>
+                        <span class="px-2 w-75 d-inline-block" id="calc-value3">10</span>
                         <span class="border-start border-2 ps-2">%</span>
                       </div>
                     </div>
-                    <div class="">
+                    <div>
                       <div class="calc-field d-flex align-items-center justify-content-between">
-                        <div class="value left">10%</div>
-                        <input type="range" id="calc-slider3" min="0" max="35" value="0" step="1"  oninput="calcSlider()">
-                        <div class="value right">35%</div>
+                        <div class="value-left">10%</div>
+                        <input type="range" id="calc-slider3" min="10" max="35" value="10" step="1"  oninput="calcSlider()">
+                        <div class="value-right">35%</div>
                       </div>
                     </div>
                   </div>
+                  <!-- ======= End Interest ======= -->
                 </div>
               </div>
+              <!-- ======= End Calculate Box ======= -->
+              
+              <!-- ======= EMI Result Box ======= -->
               <div class="col-lg-4 col-sm-12">
                 <div class="calc-result border d-flex flex-column justify-content-end align-items-center ">
                   <p>Your Emi Calculated</p>
-                  <h3 class="py-3 mb-4">$ XYZ,123,12</h3>
-
+                  <h3 class="py-1 mb-5">$ XYZ,123,12</h3>
                   <button class="w-75">Apply Now</button>
                 </div>
               </div>
+              <!-- ======= End Result Box ======= -->
             </div>
           </div>
         </div>
       </section>
+      <!-- ======= End Calculate EMI Section ======= -->
 
-      <section id="scrollspyHeading5">
-        <!-- ======= Frequently Asked Questions Section ======= -->
+      <!-- ======= FAQs Section ======= -->
+      <div id="scrollspyHeading5">
         <div id="faq" class="faq py-5">
           <div class="container">
-            <h1 class="fs-2 fw-bold prod-cont-head">FAQs</h1>
+            <h1 class="cpal-main-head">FAQs</h1>
 
             <div class="faq-list pt-5">
+              <!-- ======= FAQS Items ======= -->
               <ul>
                 <li>
                   <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">What is CarePal Money?
@@ -630,14 +683,17 @@
                     </p>
                   </div>
                 </li>
-              </ul>
+              </ul> 
+              <!-- ======= End FAQs Items ======= -->
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      <!-- ======= End FAQs Section ======= -->
+
     </div>
   </main>
-  <!-- End #main -->
+  <!-- ======= End Main ======= -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -651,6 +707,7 @@
               Copyright © 2022 CarePal Money. All rights reserved.
             </p>
           </div>
+          <!-- ======= Footer Links ======= -->
           <div class="col-lg-6">
             <div class="row">
               <div class="col-lg-3 col-md-6 footer-links">
@@ -682,6 +739,7 @@
               </div>
             </div>
           </div>
+          <!-- ======= End Footer Links ======= -->
         </div>
       </div>
     </div>
@@ -693,10 +751,7 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Template Main JS File -->

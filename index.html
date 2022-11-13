@@ -18,11 +18,9 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
@@ -46,7 +44,7 @@
         <ul>
           <div class="border-bottom border-1 w-100"></div>
           <li><a class="nav-link" href="./product.html"><span>Product</span></a></li>
-          <li><a class="nav-link" href=""><span>About Us</span></a></li>
+          <li><a class="nav-link" href="./about.html"><span>About Us</span></a></li>
           <li><a class="nav-link" href=""><span>Contact Us</span></a></li>
           <div class="border-top border-1 pt-4 mobile-nav-info">
             <div class="py-2 px-4 d-flex"><img src="./assets/img/demo/header-call.svg" class="pe-2" alt="" /> 1800 121
@@ -56,20 +54,23 @@
           </div>
         </ul>
 
-      </nav><!-- .navbar -->
+      </nav>
 
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- ======= End Header ======= -->
 
+   <!-- ======= Apply Button Fixed Bottom =======-->
   <div class="container-fluid fixed-bottom text-center py-3 cpal-bottom-acont">
     <button type="button" class="apply-btm-link btn text-white fw-bold">Apply Now</button>
   </div>
-  <!-- ======= Hero Section ======= -->
+  
+  <!-- ======= Hero Section =======-->
   <div id="hero" class="container-fluid">
     <div class="row position-relative">
       <div class="hero-main col-sm-12 col-lg-9">
         <div class="hero-det position-absolute p-4 row">
-          <h1 class="fs-2 fw-bold ps-3">CarePal Money</h1>
+          <h1 class="fw-bold ps-3">CarePal Money</h1>
           <p class="fs-6 mt-2 ps-0">Making quality healthcare accessible through quick and affordable loans, <span
               class="fw-bold">starting at 0% EMI!</span></p>
 
@@ -90,16 +91,20 @@
         </div>
       </div>
     </div>
-  </div><!-- End Hero -->
+  </div>
+  <!--========== End Hero =========-->
 
+  <!--========== Main Section =========-->
   <main id="main">
+
+    <!--========== How CarePal Work =========-->
     <section id="carepal-work">
-      <div class="carepal-work-cont py-5  container">
-        <h1 class="fs-2 ps-3 fw-bold">How CarePal Works</h1>
+      <div class="container py-5">
+        <h1 class="cpal-main-head">How CarePal Money Works</h1>
         <p class="fs-6 ">CarePal Money in partnership with RBI Regulated Entities/ NBFCs helps you avail loans in a few
           simple steps!</span></p>
 
-        <div class="d-flex justify-content-center align-items-center row py-4">
+        <div class="row d-flex justify-content-center align-items-center py-4 mx-2">
           <div class="col-lg-4 col-sm-12 text-center me-lg-5">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
@@ -114,19 +119,19 @@
                 <div class="carousel-item active">
                   <div class="mb-2 d-flex justify-content-center"><span>1</span></div>
                   <h2>Apply For Your Healthcare Needs</h2>
-                  <p>Fill the form given below and our lending team experts will connect with you to help choose the
+                  <p class="py-2">Fill the form given below and our lending team experts will connect with you to help choose the
                     best scheme based on your healthcare needs.</p>
                 </div>
                 <div class="carousel-item">
                   <div class="mb-2 d-flex justify-content-center"><span>2</span></div>
                   <h2>Apply For Your Healthcare Needs</h2>
-                  <p>Fill the form given below and our lending team experts will connect with you to help choose the
+                  <p class="py-2">Fill the form given below and our lending team experts will connect with you to help choose the
                     best scheme based on your healthcare needs.</p>
                 </div>
                 <div class="carousel-item">
                   <div class="mb-2 d-flex justify-content-center"><span>3</span></div>
                   <h2>Apply For Your Healthcare Needs</h2>
-                  <p>Fill the form given below and our lending team experts will connect with you to help choose the
+                  <p class="py-2">Fill the form given below and our lending team experts will connect with you to help choose the
                     best scheme based on your healthcare needs.</p>
                 </div>
               </div>
@@ -141,51 +146,76 @@
               <img src="./assets/img/work/play-icon.svg" alt="" id="vid-play-btn" onclick="toggleVideo()" />
             </div>
 
-            <div class="p-2 col-sm-12 d-flex justify-content-between flex-wrap cpal-work-btm">
-              <p class="fw-bold text-white">For better understanding </p>
-              <a href="" class="text-decoration-underline text-white fs-6"><img src="./assets/img/work/play-icon.svg"
-                  width="16" height="16" alt=""> See video</a>
+            <div class="p-2 col-sm-12 d-flex justify-content-between aligm-item-center flex-wrap cpal-work-btm">
+              <div class="fs-6 fw-bold text-white">For better understanding </div>
+              <a href="" class="text-decoration-underline text-white fs-6 fw-light">
+                <img src="./assets/img/work/play-icon.svg"
+                  width="16" height="16" alt=""> See video
+                </a>
             </div>
           </div>
 
         </div>
       </div>
     </section>
+    <!--========== End CarePal Work =========-->
 
+    <!--========== Why CarePal =========-->
     <section id="cpal-why">
       <div class="cpal-why-cont container">
         <div class="row d-flex align-items-center justify-content-between flex-wrap">
-          <div class="col-lg-5 col-md-12 col-sm-12 mb-md-5 cpal-why-img ">
-            <img width="500" height="500" src="./assets/img/why_carepal/why-cpal-phone.png" alt="">
+          <div class="col-lg-5 col-md-12 col-sm-12 mb-md-5 cpal-why-img">
+            <img width="500" height="500" src="./assets/img/why_carepal/why-cpal-phone.png" alt="" />
           </div>
           <div class="col-lg-6 col-md-12 col-sm-12 cpal-why-item">
-            <h1 class="fs-2 ps-3 fw-bold">Why CarePal Money?</h1>
+            <h1 class="cpal-main-head">Why CarePal Money?</h1>
 
             <div class="my-5 d-flex justify-content-between flex-wrap">
-              <div class=" mb-4"><img src="./assets/img/demo/why-icon1.png" alt=""> Hassle Free Approval</div>
-              <div class=" mb-4"><img src="./assets/img/demo/why-icon1.png" alt=""> No Collateral Required</div>
-              <div class=" mb-4"><img src="./assets/img/demo/why-icon1.png" alt=""> Quick Disbursal Time</div>
-              <div class=" mb-4"><img src="./assets/img/demo/why-icon1.png" alt=""> Completely Flexible Tenure</div>
-              <div class=" mb-4"><img src="./assets/img/demo/why-icon1.png" alt=""> Minimal Documentation</div>
-              <div class=" mb-4"><img src="./assets/img/demo/why-icon1.png" alt=""> Easy Online Installments</div>
+              <div class="mb-4 d-flex">
+                <img src="./assets/img/demo/why-icon1.png" width="50" height="50" alt="" />
+                <span class="ps-2">Hassle Free Approval</span>
+              </div>
+              <div class="mb-4 d-flex">
+                <img src="./assets/img/demo/why-icon1.png" width="50" height="50" alt="" /> 
+                <span class="ps-2">No Collateral Required</span>
+              </div>
+              <div class="mb-4 d-flex">
+                <img src="./assets/img/demo/why-icon1.png" width="50" height="50" alt="" />
+                <span class="ps-2">Quick Disbursal Time</span>
+              </div>
+              <div class="mb-4 d-flex">
+                <img src="./assets/img/demo/why-icon1.png" width="50" height="50" alt="" />
+                <span class="ps-2">Completely Flexible Tenure</span>
+              </div>
+              <div class="mb-4 d-flex">
+                <img src="./assets/img/demo/why-icon1.png" width="50" height="50" alt="" />
+                <span class="ps-2">Minimal Documentation</span>
+              </div>
+              <div class="mb-4 d-flex">
+                <img src="./assets/img/demo/why-icon1.png" width="50" height="50" alt="" /> 
+                <span class="ps-2">Easy Online Installments</span>
+              </div>
             </div>
 
             <div class="mt-2 ps-0">
-              <button type="button" class="btn-apply btn text-white fw-bold col-sm-12">Apply Now</button>
+              <button type="button" class="btn-apply btn text-white fw-bold col-sm-12">
+                Apply Now
+              </button>
             </div>
-
           </div>
         </div>
       </div>
     </section>
+    <!--========== End Why  =========-->
 
+    <!--========== CarePal Treatments =========-->
     <div id="cpal-treatment">
       <div class=" cpal-treat-cont py-5">
         <div class="container">
-          <h1 class="fs-2 ps-3 fw-bold">Medical Treatments You Can Apply For</h1>
+          <h1 class="cpal-main-head">Medical Treatments You Can Apply For</h1>
           <p class="fs-6 mt-3">Below is the list of healthcare services we help finance:</span></p>
 
-          <div class="swiper treatment-slider">
+          <div class="swiper treatment-slider py-4">
             <div class="swiper-wrapper">
               <div class="swiper-slide cpal-card py-4 px-2 mb-2 flex-column">
                 <div class="d-flex justify-content-around align-items-center">
@@ -229,9 +259,11 @@
         </div>
       </div>
     </div>
+    <!--========== End Treatments =========-->
 
+    <!--========== CarePal Treatments Form =========-->
     <div id="cpal-treat-form">
-      <div class="cpal-tform-cont py-4">
+      <div class="cpal-tform-cont py-5">
         <div class="container">
           <div class="row d-flex justify-content-between align-items-center">
             <div class="col-lg-4 col-sm-12">
@@ -288,6 +320,8 @@
         </div>
       </div>
     </div>
+    <!--========== End Treatments Form =========-->
+    
   </main>
   <!-- End #main -->
 
@@ -340,10 +374,7 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Template Main JS File -->

@@ -1,11 +1,5 @@
-/**
-* Template Name: OnePage - v4.9.2
-* Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
-  "use strict";
+  // "use strict";
 
   /**
    * Easy selector helper function
@@ -164,12 +158,7 @@
     });
   }
 
-  /**
-   * Initiate glightbox 
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+
 
   /**
      * Treatments slider
@@ -205,7 +194,7 @@
   });
 
 
-  new PureCounter();
+  // new PureCounter();
 
 })()
 
@@ -240,14 +229,16 @@ function calcSlider(){
    var mySlider1 = document.getElementById('calc-slider1');
    var mySlider2 = document.getElementById('calc-slider2');
    var mySlider3 = document.getElementById('calc-slider3');
-   var myValue = document.getElementById('calc-value');
 
    var percent1 = (mySlider1.value / mySlider1.max)*100;
-   var percent2 = (mySlider2.value / mySlider2.max)*100;
-   var percent3 = (mySlider3.value / mySlider3.max)*100;
+   var percent2 = ((mySlider2.value-mySlider2.min) / (mySlider2.max-mySlider2.min))*100;
+   var percent3 = ((mySlider3.value-mySlider3.min) / (mySlider3.max-mySlider3.min))*100;
 
    mySlider1.style.background = `linear-gradient( to right, #1E75BB ${percent1}%, rgba(28, 117, 188, .1) ${percent1}%)`;
    mySlider2.style.background = `linear-gradient( to right, #1E75BB ${percent2}%, rgba(28, 117, 188, .1) ${percent2}%)`;
    mySlider3.style.background = `linear-gradient( to right, #1E75BB ${percent3}%, rgba(28, 117, 188, .1) ${percent3}%)`;
-   myValue.innerText = mySlider1.value;
+
+   document.getElementById('calc-value1').innerText = mySlider1.value;
+   document.getElementById('calc-value2').innerText = mySlider2.value;
+   document.getElementById('calc-value3').innerText = mySlider3.value;
 }

@@ -54,9 +54,9 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
-  font-family: "Raleway", sans-serif;
+p,
+span{
+  font-family: "Roboto","Raleway", sans-serif;
 }
 /*--------------------------------------------------------------
 # Back to top button
@@ -183,12 +183,6 @@ h6 {
   max-height: 40px;
 }
 
-@media (max-width: 992px) {
-  #header .logo {
-    font-size: 28px;
-  }
-}
-
 /* Bottom attachment  */
 .cpal-bottom-acont{
   background: #1E75BB 0% 0% no-repeat padding-box;
@@ -200,6 +194,19 @@ h6 {
   background: #E28F20 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 8px;
+}
+
+@media (max-width: 992px) {
+  #header .logo {
+    font-size: 28px;
+  }
+  .apply-btm-link{
+    width: 291px;
+    height: 44px;
+  }
+  .cpal-bottom-acont {
+    height: 70px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -468,6 +475,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
+  height: 100vh;
 }
 .hero-main{
   margin-top:70px;
@@ -493,13 +501,14 @@ h6 {
   opacity: 1;
 }
 .hero-det>h1{
-  font: normal normal bold 44px/44px Roboto;
+  font: normal normal bold 40px/44px Roboto;
   border-left: 4px solid #1E75BB;
   color: #1E75BB;
 }
 .hero-det>div>div>span{
   font: normal normal normal 16px/22px Roboto;
 }
+
 .btn-apply{
   width: 100%;
   max-width: 290px;
@@ -512,6 +521,7 @@ h6 {
 .btn-apply:hover{
   background: #E28F20;
 }
+
 
 @media (min-width: 1024px) {
   #hero {
@@ -558,7 +568,7 @@ h6 {
     font: normal normal normal 14px/19px Roboto;
   }
   .btn-apply{
-    width: 100%;
+    height: 44px;
   }
 }
 
@@ -571,11 +581,6 @@ h6 {
   opacity: 1;
 }
 
-.carepal-work-cont h1{
-  font: normal normal bold 38px/40px Roboto;
-  color: #1E75BB;
-  border-left: 4px solid #1E75BB;
-}
 .cpal-work-right{
   /* background: rgba(28, 117, 188, 1) 0% 0% no-repeat padding-box; */
   /* border-radius: 6px; */
@@ -627,6 +632,11 @@ h6 {
   height: 47px;
   outline: none;
 }
+
+.carousel-item>h2{
+  font: normal normal bold 26px/36px Roboto;
+  color: #1E75BB;
+}
 .carousel-indicators button{
   background-color: #1E75BB !important;
 }
@@ -644,12 +654,19 @@ h6 {
   display: none !important;
 }
 
+.cpal-main-head{
+  font: normal normal bold 38px/45px Roboto;
+  color: #1E75BB;
+  border-left:4px solid #1E75BB;
+  padding-left:12px;
+}
+
 @media (max-width: 760px) {
   .cpal-work-right{
     background: #1C75BC 0% 0% no-repeat padding-box;
     box-shadow: -5px -5px 6px #00000029;
     max-width: 339px;
-    height: 39px;
+    height: fit-content;
     font: normal normal bold 16px/26px Roboto;
   }
   .cpal-work-video{
@@ -658,27 +675,30 @@ h6 {
   .cpal-work-btm{
     display: flex !important;
   }
-  
+  .carousel-item>h2{
+    font: normal normal bold 22px/30px Roboto;
+  }
 }
 
 /*--------------------------------------------------------------
   # Why CarePal Section
 --------------------------------------------------------------*/
 
-.cpal-why-item h1{
-  font: normal normal bold 38px/40px Roboto;
-  color: #1E75BB;
-  border-left: 4px solid #1E75BB;
-}
-.cpal-why-item>div>div{
+.cpal-why-items>div{
   width: 176px;
+}
+.cpal-why-items>div>span{
+  font: normal normal normal 19px/25px Roboto;
 }
 @media (max-width: 760px) {
   .cpal-why-img{
     display: none;
   }
-  .cpal-why-item>div>div{
+  .cpal-why-items>div{
     width: 150px;
+  }
+  .cpal-why-items>div>span{
+    font: normal normal normal 16px/25px Roboto;
   }
 }
 
@@ -688,11 +708,6 @@ h6 {
 .cpal-treat-cont{
   background: #F8F8F8 0% 0% no-repeat padding-box;
 }
-.cpal-treat-cont h1{
-  font: normal normal bold 38px/40px Roboto;
-  color: #1E75BB;
-  border-left: 4px solid #1E75BB;
-}
 .cpal-card{
   max-width: 186px;
   height: 137px;
@@ -701,7 +716,10 @@ h6 {
   background: #fff url('../img/medical-treatment/mtreat-bg.png') center center no-repeat !important;
   background-size: cover;
 }
-
+.cpal-card:hover{
+  background: rgba(28, 117, 188, 0.9) url('../img/medical-treatment/mtreat-bg.png') center center no-repeat !important;
+  color: #fff;
+}
 .swiper {
   width: 100%;
   height: 100%;
@@ -823,6 +841,26 @@ h6 {
   font: normal normal 300 16px/24px Roboto;
 }
 
+@media (max-width: 760px) {
+  .cpal-tform-head{
+    font: normal normal bold 26px/31px Roboto;
+  }
+  .contact-form .label {
+    font: normal normal bold 14px/19px Roboto;
+  }
+  .prod-terms-check {
+    font: normal normal normal 11px/17px Roboto !important;
+  }
+  .cpal-check-label {
+    font: normal normal normal 11px/23px Roboto !important;
+  }
+  .ctreat-form-para {
+    font: normal normal 300 12px/24px Roboto;
+  }
+
+
+}
+
 /*--------------------------------------------------------------
 # Product
 --------------------------------------------------------------*/
@@ -841,6 +879,11 @@ h6 {
   /* background: url("../img/banner/hero-banner.png") top center; */
   position: relative;
   background-size: cover;
+}
+.prod-form-head{
+  font: normal normal bold 30px/48px Roboto !important;
+  color: #1E75BB;
+  padding-left: 8px;
 }
 .contact-form .prod-input-text{
   display: block;
@@ -873,6 +916,9 @@ h6 {
   .prod-hero-main{
     height: 286px;
   }
+  .prod-form-head{
+    font: normal normal bold 24px/32px Roboto !important;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -904,23 +950,20 @@ h6 {
     display: block;
 }
 
-.prod-cont-head{
-  font: normal normal bold 38px/45px Roboto;
-  color: #1E75BB;
-  border-left:4px solid #1E75BB;
-  padding-left:12px;
-}
-
-
 /*
   ** Product Eligibility 
 */
 #prod-elig{
   background: #F8F8F8 0% 0% no-repeat padding-box;
 }
+.prod-elig-items  img{
+  width: 45px;
+  height: 45px;
+}
 .prod-elig-items h3{
   letter-spacing: 0px;
   color: #1E75BB;
+  font: normal normal bold 26px/36px Roboto;
 }
 .prod-elig-items p{
   font: normal normal normal 21px/32px Roboto;
@@ -942,6 +985,19 @@ h6 {
   }
   .prod-nav{
     width:auto;
+  }
+  .prod-loan-info>p {
+    font: normal normal 300 12px/24px Roboto;
+  }
+  .prod-elig-items h3{
+    font: normal normal bold 20px/25px Roboto;
+  }
+  .prod-elig-items  img{
+    width: 30px;
+    height: 30px;
+  }
+  .prod-elig-items p{
+    font: normal normal normal 16px/32px Roboto;
   }
   
 }
@@ -1001,6 +1057,7 @@ h6 {
   outline: none;
   border:none;  
   background-color: rgba(28, 117, 188, .1);
+  margin:0 8px;
 }
 /* #calc-slider1{
   background: linear-gradient( to right, #1E75BB 50%, rgba(28, 117, 188, .1) 40%); 
@@ -1024,13 +1081,36 @@ h6 {
 .calc-field input::-moz-range-progress{
   background-color: #16507b;
 }
-
+.value-left, .value-right{
+  font: normal normal normal 16px/14px Roboto;
+}
 @media (max-width: 480px) {
   .calc-amt-box{
-    min-width: 135px;
+    max-width: 150px;
     height: 30px;
     font: normal normal bold 14px/32px Roboto;
   }
+  .calc-field input{
+    height: 5px;
+  }
+  .calc-field input::-webkit-slider-thumb{
+    height: 14px;
+    width: 14px;
+    border: 3px solid #fff;
+  }
+  .emi-calc-item p{
+    font: normal normal bold 13px/19px Roboto;
+  }
+  .value-left, .value-right{
+    font: normal normal normal 12px/14px Roboto;
+  }
+  .calc-box {
+    height: 320px;
+  }
+  .calc-result {
+    height: 340px;
+  }
+
 }
 
 
@@ -1046,6 +1126,7 @@ h6 {
 }
 .cpal-scheme>tbody>tr>td{
   border-right: 1px solid #fff;
+  font: normal normal normal 21px/32px Roboto;
 }
 .cpal-scheme>tbody>tr:nth-of-type(even){
   background: rgba(82, 186, 230, 0.2) 0% 0% no-repeat padding-box;
@@ -1053,15 +1134,59 @@ h6 {
 .cpal-scheme>tbody>tr:nth-of-type(odd){
   background: rgba(82, 186, 230, 0.1) 0% 0% no-repeat padding-box;
 }
+
+.cpal-scheme-det{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
 .cpal-scheme-det>div>p{
   margin:0;
   font: normal normal 300 16px/25px Roboto;
   color: rgba(75, 75, 75, 0.8);
 }
+#scheme-more-btn{
+  text-align: right;
+  text-decoration: underline;
+  font: normal normal normal 14px/20px Roboto;
+  color: #1E75BB;
+  border: none;
+  outline: none;
+  background: none;
+  margin:0 0 0 auto;
+}
 #scheme-examples{
   display: none;
 }
 
+
+@media (max-width: 720px) {
+  .cpal-scheme>thead>tr>th{
+    font: normal normal bold 14px/19px Roboto;
+  }
+  .cpal-scheme>tbody>tr>td{
+    font: normal normal normal 14px/32px Roboto;
+  }
+  .cpal-scheme-det>div>p{
+    font: normal normal 300 14px/25px Roboto;
+  }
+  .cpal-scheme-det{
+    width: 100%;
+
+  }
+  .calc-result>p {
+    font: normal normal normal 17px/15px Roboto;
+  }
+  .calc-result>h3 {
+    font: normal normal bold 26px/45px Roboto;
+  }
+  .calc-result>button {
+    font: normal normal bold 16px/24px Roboto;
+    width: 253px;
+    height: 44px;
+  }
+}
+  
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
@@ -1119,7 +1244,10 @@ h6 {
 
 .faq .faq-list p {
   margin-bottom: 0;
-  padding: 10px 0 0 0;
+  padding: 0px 0px 0 8px;
+  font: normal normal normal 21px/32px Roboto;
+  border-left:2px solid #1E75BB;
+  margin-top:10px;
 }
 
 .faq .faq-list .icon-show {
@@ -1144,6 +1272,27 @@ h6 {
     padding: 0;
   }
 }
+
+
+@media (max-width: 720px) {
+  .faq .faq-list a {
+    font: normal normal bold 16px/23px Roboto;
+  }
+  .faq .faq-list p {
+    font: normal normal normal 16px/23px Roboto;
+  }
+}
+
+
+  
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+  
+/*--------------------------------------------------------------
+# About Header
+--------------------------------------------------------------*/
 
 
 .about-hero-main{
@@ -1235,6 +1384,12 @@ h6 {
     width: 195px;
     height: 44px;
     font: normal normal bold 16px/44px Roboto;
+  }
+  .cpal-main-head{
+    font: normal normal bold 26px/30px Roboto;
+    color: rgba(30, 117, 187, 1);
+    border-left:4px solid #1E75BB;
+    padding-left:12px;
   }
   
 }
