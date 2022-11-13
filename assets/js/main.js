@@ -101,6 +101,22 @@
   }
 
   /**
+   * Back to top button
+   */
+   let fixedBottom = select('.fixed-bottom')
+   if (fixedBottom) {
+     const hideFixedBottom = () => {
+       if (window.scrollY > 2000) {
+        fixedBottom.classList.add('active')
+       } else {
+        fixedBottom.classList.remove('active')
+       }
+     }
+     window.addEventListener('load', hideFixedBottom)
+     onscroll(document, hideFixedBottom)
+   }
+ 
+  /**
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {

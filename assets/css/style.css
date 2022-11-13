@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Varela Round', sans-serif; */
   color: #444444;
 }
 
@@ -63,7 +64,7 @@ span{
 --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
-  visibility: hidden;
+  visibility: hidden; 
   opacity: 0;
   right: 15px;
   bottom: 15px;
@@ -187,6 +188,9 @@ span{
 .cpal-bottom-acont{
   background: #1E75BB 0% 0% no-repeat padding-box;
   height: 80px;
+}
+.cpal-bottom-acont.active{
+  display: none;
 }
 .apply-btm-link{
   width: 291px;
@@ -568,7 +572,9 @@ span{
     font: normal normal normal 14px/19px Roboto;
   }
   .btn-apply{
+    width: 311px;
     height: 44px;
+    margin:0 auto;
   }
 }
 
@@ -684,8 +690,15 @@ span{
   # Why CarePal Section
 --------------------------------------------------------------*/
 
+.cpal-why-items{
+  padding:0 5px;
+}
 .cpal-why-items>div{
   width: 176px;
+}
+.cpal-why-items>div>img{
+  width: 40px;
+  height: 40px;
 }
 .cpal-why-items>div>span{
   font: normal normal normal 19px/25px Roboto;
@@ -699,6 +712,13 @@ span{
   }
   .cpal-why-items>div>span{
     font: normal normal normal 16px/25px Roboto;
+  }
+  .cpal-why-items>div>img{
+    width: 40px;
+    height: 40px;
+  }
+  .why-btn-cont{
+    text-align: center;
   }
 }
 
@@ -720,6 +740,11 @@ span{
   background: rgba(28, 117, 188, 0.9) url('../img/medical-treatment/mtreat-bg.png') center center no-repeat !important;
   color: #fff;
 }
+.cpal-card>div>img{
+  width: 50px;
+  height: 50px;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -1324,9 +1349,10 @@ span{
 .ptr-item-wrap{
   display: flex; 
   flex-wrap: wrap;
+  margin:0 auto;
 }
 .ptnr-item{
-  width: 395px;
+  width: 300px;
 }
 .ptnr-item>div{
   width: 291px;
@@ -1367,6 +1393,9 @@ span{
   }
   .cpal-about-img{
     display: none;
+  }
+  .ptnr-item-wrap>div{
+    justify-content: center !important;
   }
 
   .ptnr-item{
