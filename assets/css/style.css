@@ -733,13 +733,62 @@ span{
 }
 .cpal-card:hover{
   background: rgba(28, 117, 188, 0.9) url('../img/medical-treatment/mtreat-bg.png') center center no-repeat !important;
+  
+}
+.cpal-card>h4{
+  font: normal normal bold 16px/22px Roboto;
+  color: #4B4B4B;
+}
+.cpal-card:hover h4{
   color: #fff;
 }
-.cpal-card>div>img{
+.cpal-card>div{
   width: 50px;
   height: 50px;
+  background-size: cover;
 }
-
+.card-skin-img{
+  background: url('../img/Icons/treatment/Skin-and-Cosmetic-Surgery.png') center center no-repeat;
+}
+.cpal-card:hover .card-skin-img{
+  background: url('../img/Icons/treatment/Hover-treat/Skin-and-Cosmetic-Surgery.png') center center no-repeat;
+  background-size: cover;
+}
+.card-ivf-img{
+  background: url('../img/Icons/treatment/IVF-And-Maternity-Care.png') center center no-repeat;
+}
+.cpal-card:hover .card-ivf-img{
+  background: url('../img/Icons/treatment/Hover-treat/IVF-And-Maternity-Care.png') center center no-repeat;
+  background-size: cover;
+}
+.card-hair-img{
+  background: url('../img/Icons/treatment/Hair-Restoration.png') center center no-repeat;
+}
+.cpal-card:hover .card-hair-img{
+  background: url('../img/Icons/treatment/Hover-treat/Hair-Restoration.png') center center no-repeat;
+  background-size: cover;
+}
+.card-bariatric-img{
+  background: url('../img/Icons/treatment/Baratric-Surgery.png') center center no-repeat;
+}
+.cpal-card:hover .card-bariatric-img{
+  background: url('../img/Icons/treatment/Hover-treat/Baratric-Surgery.png') center center no-repeat;
+  background-size: cover;
+}
+.card-ortho-img{
+  background: url('../img/Icons/treatment/Orthopedic-Surgery.png') center center no-repeat;
+}
+.cpal-card:hover .card-ortho-img{
+  background: url('../img/Icons/treatment/Hover-treat/Orthopedic-Surgery.png') center center no-repeat;
+  background-size: cover;
+}
+.card-dental-img{
+  background: url('../img/Icons/treatment/Dental-Treatments.png') center center no-repeat;
+}
+.cpal-card:hover .card-dental-img{
+  background: url('../img/Icons/treatment/Hover-treat/Dental-Treatments.png') center center no-repeat;
+  background-size: cover;
+}
 .swiper {
   width: 100%;
   height: 100%;
@@ -876,6 +925,10 @@ span{
   }
   .ctreat-form-para {
     font: normal normal 300 12px/24px Roboto;
+  }
+  .cpal-card>h4{
+    font: normal normal bold 14px/22px Roboto;
+    color: #4B4B4B;
   }
 
 
