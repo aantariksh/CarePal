@@ -75,47 +75,45 @@
     <div class="position-relative">
       <div class="prod-hero-main col-sm-12 col-lg-9">
         <!-- ======= Hero Section Form ======= -->
-        <form class="hero-det bg-white p-4">
+        <form class="hero-det bg-white p-4" id="contact-form">
           <h1 class="prod-form-head">
             Avail Quick Loans With CarePal Money!
           </h1>
           <div class="contact-form prod-form row my-0">
             <div class="form-field col-lg-6 my-3">
-              <input type="text" id="name" class="prod-input-text" name="" placeholder=" " />
+              <input type="text" id="name" class="prod-input-text" name="name" placeholder=" " required />
               <label for="name" class="label">Name*</label>
             </div>
             <div class="form-field col-6 my-3">
-              <input type="text" id="telephone" class="prod-input-text" name="" placeholder=" " />
+              <input type="tel" id="telephone" class="prod-input-text" name="telephone" placeholder=" " pattern="[0-9]{10,12}" required />
               <label for="telephone" class="label">Telephone*</label>
             </div>
             <div class="form-field col-6 my-3">
-              <input type="text" id="loan-amt" class="prod-input-text" name="" placeholder=" " />
+              <input type="number" id="loan-amt" class="prod-input-text" name="loanAmount" placeholder=" " min="1" required />
               <label for="loan-amt" class="label">Loan Amount*</label>
             </div>
             <div class="form-field col-lg-6 my-3">
-              <input type="text" id="email" class="prod-input-text" name="" placeholder=" " />
+              <input type="email" id="email" class="prod-input-text" name="email" placeholder=" " required />
               <label for="email" class="label">Email*</label>
             </div>
             <div class="form-field col-lg-6 my-3">
-              <input type="text" id="salary" class="prod-input-text" name="" placeholder=" " />
+              <input type="number" id="salary" class="prod-input-text" name="salary" placeholder=" " min="1" required />
               <label for="salary" class="label">Monthly Salary*</label>
             </div>
             <div class="form-field col-lg-6 my-3">
-              <input type="text" id="treatment" class="prod-input-text" name="" placeholder=" " />
+              <input type="text" id="treatment" class="prod-input-text" name="treatment" placeholder=" " required />
               <label for="treatment" class="label">Treatment*</label>
             </div>
 
             <div class="form-check col-lg-12 py-2">
-              <input class="form-check-input cpal-check-input" type="checkbox" value="" id="cpal-terms-check" />
+              <input class="form-check-input cpal-check-input" type="checkbox" value="" id="cpal-terms-check" required />
               <label class="prod-terms-check" for="prod-terms-check">I confirm that I have read and agree to CarePal
                 Money’s
                 <a href="#" class="text-decoration-underline">terms & conditions</a>.</label>
             </div>
 
             <div class="mt-2 ps-0 text-center">
-              <button type="button" class="btn-apply btn text-white fw-bold col-sm-12">
-                Submit
-              </button>
+              <input type="submit" class="btn-apply btn text-white fw-bold col-sm-12" />
             </div>
           </div>
         </form>
@@ -736,6 +734,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./firebase/contact.js" type="module"></script>
 </body>
 
 </html>

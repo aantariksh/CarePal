@@ -262,64 +262,66 @@
     <!--========== End Treatments =========-->
 
     <!--========== CarePal Treatments Form =========-->
-    <div id="cpal-treat-form">
-      <div class="cpal-tform-cont py-5">
-        <div class="container">
-          <div class="row d-flex justify-content-between align-items-center">
-            <div class="col-lg-4 col-sm-12">
-              <h1 class="fs-2 ps-3 fw-bold cpal-tform-head">Cover The Cost Of Your Elective Medical Treatment With
-                CarePal Money</h1>
-              <p class="mt-4 text-white">Avail flexible and customized lending schemes with affordable payment options.
-              </p>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-              <div class="contact-form row">
-                <div class="form-field col-lg-6 my-4">
-                  <input type="text" id="name" class="input-text" name="" placeholder=" ">
-                  <label for="name" class="label">Name*</label>
-                </div>
-                <div class="form-field col-lg-6 my-4">
-                  <input type="text" id="telephone" class="input-text" name="" placeholder=" ">
-                  <label for="telephone" class="label">Telephone*</label>
-                </div>
-                <div class="form-field col-lg-6 my-4 ">
-                  <input type="text" id="email" class="input-text" name="" placeholder=" ">
-                  <label for="email" class="label">Email*</label>
-                </div>
-                <div class="form-field col-lg-6 my-4">
-                  <input type="text" id="salary" class="input-text" name="" placeholder=" ">
-                  <label for="salary" class="label">Monthly Salary*</label>
-                </div>
-                <div class="form-field col-lg-6 my-4">
-                  <input type="text" id="loan-amt" class="input-text" name="" placeholder=" ">
-                  <label for="loan-amt" class="label">Loan Amount*</label>
-                </div>
-                <div class="form-field col-lg-6 my-4">
-                  <input type="text" id="treatment" class="input-text" name="" placeholder=" ">
-                  <label for="treatment" class="label">Treatment*</label>
-                </div>
+    <form id="contact-form">
+      <div id="cpal-treat-form">
+        <div class="cpal-tform-cont py-5">
+          <div class="container">
+            <div class="row d-flex justify-content-between align-items-center">
+              <div class="col-lg-4 col-sm-12">
+                <h1 class="fs-2 ps-3 fw-bold cpal-tform-head">Cover The Cost Of Your Elective Medical Treatment With
+                  CarePal Money</h1>
+                <p class="mt-4 text-white">Avail flexible and customized lending schemes with affordable payment options.
+                </p>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="contact-form row">
+                  <div class="form-field col-lg-6 my-4">
+                    <input type="text" id="name" class="input-text" name="name" placeholder=" " required />
+                    <label for="name" class="label">Name*</label>
+                  </div>
+                  <div class="form-field col-lg-6 my-4">
+                    <input type="tel" id="telephone" class="input-text" name="telephone" placeholder=" " pattern="[0-9]{10,12}" required />
+                    <label for="telephone" class="label">Telephone*</label>
+                  </div>
+                  <div class="form-field col-lg-6 my-4 ">
+                    <input type="email" id="email" class="input-text" name="email" placeholder=" " required />
+                    <label for="email" class="label">Email*</label>
+                  </div>
+                  <div class="form-field col-lg-6 my-4">
+                    <input type="number" id="salary" class="input-text" name="salary" min="1" placeholder=" " required />
+                    <label for="salary" class="label">Monthly Salary*</label>
+                  </div>
+                  <div class="form-field col-lg-6 my-4">
+                    <input type="number" id="loan-amt" class="input-text" name="loanAmount" placeholder=" " required />
+                    <label for="loan-amt" min="1" class="label">Loan Amount*</label>
+                  </div>
+                  <div class="form-field col-lg-6 my-4">
+                    <input type="text" id="treatment" class="input-text" name="treatment" placeholder=" " required />
+                    <label for="treatment" class="label">Treatment*</label>
+                  </div>
 
-                <div class="form-check col-lg-12">
-                  <input class="form-check-input cpal-check-input" type="checkbox" value="" id="cpal-terms-check">
-                  <label class="form-check-label cpal-check-label" for="cpal-terms-check">I confirm that I have read and
-                    agree to CarePal Money’s <a href="#" class="text-white text-decoration-underline">terms &
-                      conditions</a>.</label>
-                </div>
+                  <div class="form-check col-lg-12">
+                    <input class="form-check-input cpal-check-input" type="checkbox" value="" id="cpal-terms-check" required />
+                    <label class="form-check-label cpal-check-label" for="cpal-terms-check">I confirm that I have read and
+                      agree to CarePal Money’s <a href="#" class="text-white text-decoration-underline">terms &
+                        conditions</a>.</label>
+                  </div>
 
-                <div class="mt-5 ps-0 text-center">
-                  <input type="submit" value="Submit" class="cpal-form-submit btn" />
+                  <div class="mt-5 ps-0 text-center">
+                    <input type="submit" value="Submit" class="cpal-form-submit btn" />
+                  </div>
                 </div>
               </div>
             </div>
+            <p class="my-4 ctreat-form-para text-white">Loan tenure from 3-60 months with monthly interest varying from
+              1.33% - 2.5%. Annual Interest rates vary from 16% - 36%* The standard processing fee varies from 2.5% to 4%
+              of the loan amount.For example, a loan of ₹50,000 with an APR of 18% and 24 month tenure total interest &
+              fees will be ₹11,679 *These numbers are indicative and final interest rate or processing fee may vary from
+              one user to another depending on the credit assessment.</p>
           </div>
-          <p class="my-4 ctreat-form-para text-white">Loan tenure from 3-60 months with monthly interest varying from
-            1.33% - 2.5%. Annual Interest rates vary from 16% - 36%* The standard processing fee varies from 2.5% to 4%
-            of the loan amount.For example, a loan of ₹50,000 with an APR of 18% and 24 month tenure total interest &
-            fees will be ₹11,679 *These numbers are indicative and final interest rate or processing fee may vary from
-            one user to another depending on the credit assessment.</p>
         </div>
       </div>
-    </div>
+    </form>
     <!--========== End Treatments Form =========-->
     
   </main>
@@ -380,6 +382,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./firebase/contact.js" type="module"></script>
 
 </body>
 
