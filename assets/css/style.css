@@ -157,7 +157,7 @@ span{
   transition: all 0.5s;
   background: #fff;
   z-index: 997;
-  padding: 15px 0;
+  /* padding: 15px 0; */
   border-bottom: 1px solid #e6f2fb;
 }
 
@@ -240,9 +240,10 @@ span{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  font-size: 14px;
-  color: #16507b;
+  /* padding: 10px 0 10px 30px; */
+  font: normal normal normal 18px/22px Roboto;
+  /* font-size: 14px; */
+  color: #5D5D5D;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -361,7 +362,26 @@ span{
   color: #1E75BB ;
 }
 
+.showMob{
+  display: none !important;
+}
+.navbar>ul>li>a{
+  padding: 22px 0;
+  margin-right: 40px;
+  box-sizing: border-box;
+  font: normal normal normal 18px/22px Roboto;
+}
+.navbar>ul>li>a.active{
+  border-bottom:2px solid #1E75BB;
+  font: normal normal bold 21px/22px Roboto;
+  color: #1E75BB;
+}
+
+
 @media (max-width: 991px) {
+  #header{
+    padding:15px 0;
+  }
   .mobile-nav-toggle {
     display: block;
   }
@@ -382,6 +402,17 @@ span{
   .mobile-nav-info{
     display: block;
     font: normal normal normal 14px/23px Roboto;
+  }
+  .navbar>ul>li>a{
+    padding: 22px 25px;
+    font: normal normal normal 16px/22px Roboto;
+  }
+  .navbar>ul>li>a.active {
+    border-bottom: none;
+    font: normal normal bold 16px/22px Roboto;
+  }
+  .showMob{
+    display: block !important;
   }
 }
 
@@ -483,9 +514,9 @@ span{
   height: 700px;
 }
 .hero-main{
-  margin-top:70px;
-  height: 500px;
-  background: transparent url('../img/banner/hero-banner.png') 0% 0% no-repeat padding-box;
+  margin-top:65px;
+  height: 550px;
+  background: transparent url('../img/banner/home-banner.png') 0% 0% no-repeat padding-box;
   /* background: url("../img/banner/hero-banner.png") top center; */
   position: relative;
   background-size: cover;
@@ -495,23 +526,38 @@ span{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right:-25%;
+  right:-20%;
   max-width: 615px;
-  /* max-height: 407px; */
   height: fit-content;
+  padding: 30px;
   box-shadow: 0px 4px 10px #00000029;
-  border-radius: 8px;
   background: #F0FAFE 0% 0% no-repeat padding-box;
   border-radius: 16px;
   opacity: 1;
 }
 .hero-det>h1{
-  font: normal normal bold 40px/44px Roboto;
+  font: normal normal bold 44px/56px Roboto;
   border-left: 4px solid #1E75BB;
   color: #1E75BB;
+  /* padding-top:18px;
+  margin-bottom: 18px; */
 }
-.hero-det>div>div>span{
+.hero-det>p{
+  font: normal normal normal 21px/32px Roboto;
+  color: #4B4B4B;
+}
+/* .hero-det>div>div>span{
   font: normal normal normal 16px/22px Roboto;
+} */
+.hero-det-item>div>img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.hero-det-item>div>span{
+  font: normal normal normal 16px/22px Roboto;
+  color: #4B4B4B;
+  margin-right: 15px;
 }
 
 .btn-apply{
@@ -557,19 +603,31 @@ span{
     left: 50%;
     width:90%;
     margin:0 auto;
+    padding: 25px 20px;
     min-height: 340px;
+    border-radius: 8px;
+  }
+  .hero-det>p{
+    font: normal normal normal 16px/23px Roboto;
   }
   .hero-det>div>div>img{
     width:30px;
     height: 30px;
   }
-  .hero-det>div>div>span{
-    font: normal normal normal 14px/19px Roboto;
-  }
+  
   .btn-apply{
     max-width: 311px;
     height: 44px;
     margin:0 auto;
+  }
+  .hero-det-item>div{
+    padding-right:10px;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-det-item>div>span{
+    font: normal normal normal 14px/19px Roboto;
+    margin: 0;
   }
 }
 
@@ -585,17 +643,24 @@ span{
 .cpal-work-right{
   /* background: rgba(28, 117, 188, 1) 0% 0% no-repeat padding-box; */
   /* border-radius: 6px; */
-  max-width: 530px;
-  height: 280px;
+  max-width: 630px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 330px;
   z-index:10;
   position: relative;
+  background: url('../img/work/video-dot-bg.png') center center no-repeat;
+  background-size: contain;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .cpal-work-video{
   position: relative;
 }
 
-.cpal-work-video::after{
+/* .cpal-work-video::after{
   content: '';
   position: absolute;
   top: -28px;
@@ -616,12 +681,12 @@ span{
   background: url('../img/work/video-dot-main.png') bottom left no-repeat;
   z-index:-1;
   opacity: 0.5;
-}
+} */
 .cpal-work-video video{
   width: 530px;
   height: 280px;
   border-radius: 10px;
-  box-shadow: -10px -12px 0px 0px rgba(28, 117, 188, 1);
+  box-shadow: -10px -12px 0px 0px rgba(89, 150, 199, 0.9);
   object-fit: cover;
 }
 #vid-play-btn{
@@ -641,13 +706,20 @@ span{
 .carousel-indicators button{
   background-color: #1E75BB !important;
 }
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
 .carousel-item>div>span{
   display: block;
-  width: 64px;
-  height: 64px;
+  width: 55px;
+  height: 55px;
   background: #1E75BB 0% 0% no-repeat padding-box;
   border-radius: 50%;
-  font: normal normal bold 32px/64px Roboto;
+  font: normal normal bold 32px/55px Roboto;
   color: #fff;
 }
 
@@ -664,18 +736,25 @@ span{
 
 @media (max-width: 760px) {
   .cpal-work-right{
-    background: #1C75BC 0% 0% no-repeat padding-box;
-    box-shadow: -5px -5px 6px #00000029;
-    max-width: 339px;
-    height: fit-content;
+    max-width: 380px;
+    height: 90px;
     font: normal normal bold 16px/26px Roboto;
+    background: url('../img/work/mob-dot-bg.png') center center no-repeat;
+    background-size: cover;
+    padding-bottom: 15px;
+  }
+  .cpal-work-btm{
+    width: 340px;
+    min-height: 39px;
+    height: fit-content;
+    background-color: #1C75BC ;
+    box-shadow: -5px -5px 6px #00000029;
+    display: flex !important;
   }
   .cpal-work-video{
     display: none;
   }
-  .cpal-work-btm{
-    display: flex !important;
-  }
+  
   .carousel-item>h2{
     font: normal normal bold 22px/30px Roboto;
   }
@@ -955,7 +1034,7 @@ span{
   background-size: cover;
 }
 .prod-form-head{
-  font: normal normal bold 30px/48px Roboto !important;
+  font: normal normal bold 34px/48px Roboto !important;
   color: #1E75BB;
   padding-left: 8px;
 }
@@ -1496,9 +1575,12 @@ span{
   font: normal normal bold 18px/27px Roboto;
   color: #fff;
   position: relative;
-  padding-bottom: 12px;
+  padding-bottom: 20px;
 }
-
+#footer .footer-top h4>span{
+  padding-bottom:5px;
+  border-bottom: 2px solid #fff;
+}
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
 }
@@ -1512,7 +1594,7 @@ span{
 #footer .footer-top .footer-links ul li {
   padding: 10px 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   font: normal normal 300 14px/19px Roboto;
 }
 
