@@ -234,11 +234,14 @@ function toggleVideo(){
 function moreScheme(e){
    var moreBtn = document.getElementById('scheme-more-btn');
    var exampCont = document.getElementById('scheme-examples');
-  
-    if( exampCont && exampCont.style.display == 'block')    
+
+    if( exampCont && exampCont.style.display == 'block') {
       exampCont.style.display = 'none';
-    else 
+      moreBtn.innerHTML = 'Click here for more details <i class="bi bi-chevron-down"></i>'
+    } else {
       exampCont.style.display = 'block';
+      moreBtn.innerHTML = 'Click here for more details <i class="bi bi-chevron-up"></i>'
+    }
 }
 
 function calcSlider(){
@@ -257,4 +260,5 @@ function calcSlider(){
    document.getElementById('calc-value1').innerText = mySlider1.value;
    document.getElementById('calc-value2').innerText = mySlider2.value;
    document.getElementById('calc-value3').innerText = mySlider3.value;
+   document.getElementById('CalculatedEMI').innerHTML = "₹ " + Math.round(mySlider1.value * (1/mySlider2.value + mySlider3.value/100));
 }

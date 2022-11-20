@@ -198,6 +198,7 @@ span{
   background: #E28F20 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 8px;
+  margin-top: 12px;
 }
 .apply-btm-link:hover{
   background: #E28F20 0% 0% no-repeat padding-box;
@@ -516,23 +517,25 @@ span{
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 700px;
+  height: 600px;
 }
 .hero-main{
   margin-top:65px;
-  height: 550px;
+  height: 500px;
   background: transparent url('../img/banner/home-banner.png') 0% 0% no-repeat padding-box;
   position: relative;
-  background-size: cover;
+  background-size: contain;
 }
 
 .hero-det{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right:-20%;
-  max-width: 615px;
-  height: fit-content;
+  right:-22%;
+  max-width: 715px;
+  height: 407px;
+  /* max-width: 650px; */
+  /* height: fit-content; */
   padding: 30px;
   box-shadow: 0px 4px 10px #00000029;
   background: #F0FAFE url('../img/banner/home-det-bg.png') 0% 0% no-repeat padding-box;
@@ -552,12 +555,12 @@ span{
 }
 
 .hero-det-item>div>img{
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     margin-right: 10px;
 }
 .hero-det-item>div>span{
-  font: normal normal normal 16px/22px Roboto;
+  font: normal normal normal 18px/22px Roboto;
   color: #4B4B4B;
   margin-right: 15px;
 }
@@ -1013,6 +1016,7 @@ span{
   background: #FFFFFF 0% 0% no-repeat padding-box;
   max-width: 291px;
   width: 100%;
+  height: 56px;
   box-shadow: 0px 3px 10px #00000029;
   color: #1C75BC;
   font: normal normal bold 20px/30px Roboto;
@@ -1021,6 +1025,7 @@ span{
 }
 .cpal-form-submit:hover{
   background: #FFFFFF 0% 0% no-repeat padding-box;
+  transform: scale(1.01);
 }
 .ctreat-form-para{
   font: normal normal 300 16px/24px Roboto;
@@ -1756,7 +1761,7 @@ tr:last-child> td:last-child{
 }
 
 #footer .footer-top {
-  padding: 60px 0 50px 0;
+  padding: 40px 0;
   background: #002C4F;
 }
 
@@ -1773,9 +1778,6 @@ tr:last-child> td:last-child{
 #footer .footer-top h4>span{
   padding-bottom:5px;
   border-bottom: 2px solid #fff;
-}
-#footer .footer-top .footer-links {
-  margin-bottom: 30px;
 }
 
 #footer .footer-top .footer-links ul {
