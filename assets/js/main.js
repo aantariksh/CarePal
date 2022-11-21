@@ -199,12 +199,9 @@
     });
   }
 
-
-
   /**
      * Treatments slider
   */
-  
   new Swiper('.treatment-slider', {
     speed: 600,
     loop: true,
@@ -234,9 +231,13 @@
         },
   });
 
-
-  // new PureCounter();
-
+  // Load Terms from dedicated HTML file
+  fetch('terms.html')
+  .then(res => res.text())
+  .then(text => {
+      let modal = document.getElementById('terms-modal-content');
+      if (modal) modal.innerHTML = text;
+  })
 })()
 
 
@@ -254,7 +255,6 @@ function toggleVideo(){
     videoPlayer.poster = "../img/homepage/work/video-thumbnail.png";
   }
 } 
-
 
 function moreScheme(e){
    var moreBtn = document.getElementById('scheme-more-btn');
