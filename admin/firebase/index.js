@@ -7,14 +7,15 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBjjcGqcDnquyTmeHlfXn7N6zJORGHJ7Bg",
-    authDomain: "care-pal-aantariksh.firebaseapp.com",
-    databaseURL: "https://care-pal-aantariksh-default-rtdb.firebaseio.com",
-    projectId: "care-pal-aantariksh",
-    storageBucket: "care-pal-aantariksh.appspot.com",
-    messagingSenderId: "129436487219",
-    appId: "1:129436487219:web:3ed0daf6f919c59ba81d46",
-  };
+  apiKey: "AIzaSyDwBp3AN9CB_ErkntIAVQ1Lkm-lWkCYvwg",
+  authDomain: "formdata-prd.firebaseapp.com",
+  databaseURL:
+    "https://formdata-prd-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "formdata-prd",
+  storageBucket: "formdata-prd.appspot.com",
+  messagingSenderId: "137229941775",
+  appId: "1:137229941775:web:e73f88adad9209abd6f77a",
+};
 
 initializeApp(firebaseConfig);
 
@@ -43,7 +44,7 @@ onAuthStateChanged(auth, (user) => {
   const currentPage = location.pathname;
 
   if (user) {
-    if (user.uid != "LyLRyuc4tUMrFZoIgwh29SRhs6s2") signOut(auth);
+    if (user.uid != "M62mBLIm5HbMGL6CW8WQ6sU02ul2") signOut(auth);
     if (currentPage.startsWith(index)) {
       location.pathname = contact + ".html";
     }

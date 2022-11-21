@@ -1,13 +1,14 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBjjcGqcDnquyTmeHlfXn7N6zJORGHJ7Bg",
-  authDomain: "care-pal-aantariksh.firebaseapp.com",
-  databaseURL: "https://care-pal-aantariksh-default-rtdb.firebaseio.com",
-  projectId: "care-pal-aantariksh",
-  storageBucket: "care-pal-aantariksh.appspot.com",
-  messagingSenderId: "129436487219",
-  appId: "1:129436487219:web:3ed0daf6f919c59ba81d46",
+  apiKey: "AIzaSyDwBp3AN9CB_ErkntIAVQ1Lkm-lWkCYvwg",
+  authDomain: "formdata-prd.firebaseapp.com",
+  databaseURL:
+    "https://formdata-prd-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "formdata-prd",
+  storageBucket: "formdata-prd.appspot.com",
+  messagingSenderId: "137229941775",
+  appId: "1:137229941775:web:e73f88adad9209abd6f77a",
 };
 
 export const app = initializeApp(firebaseConfig);
