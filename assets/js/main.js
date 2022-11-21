@@ -37,9 +37,9 @@
   /**
    * Navbar links active state on scroll
    */
-  let navbarlinks = select('#navbar .scrollto', true)
+  let navbarlinks = select('#navbar-example2 .scrollto', true)
   const navbarlinksActive = () => {
-    let position = window.scrollY + 200
+    let position = window.scrollY + 185
     navbarlinks.forEach(navbarlink => {
       if (!navbarlink.hash) return
       let section = select(navbarlink.hash)
@@ -55,11 +55,36 @@
   onscroll(document, navbarlinksActive)
 
   /**
+   * Header fixed top on scroll
+   */
+  let header = select('#header')
+  let selectProductsHeader = select('#navbar-example2')
+  if (selectProductsHeader) {
+    let headerOffset = selectProductsHeader.offsetTop
+    let nextElement = selectProductsHeader.nextElementSibling
+    const headerFixed = () => {
+      if ((headerOffset - window.scrollY - header.offsetHeight) <= 0) {
+        selectProductsHeader.classList.add('fixed-top')
+        selectProductsHeader.classList.add('scrolled-offset')
+        nextElement.classList.add('scrolled-offset-max')
+      } else {
+        selectProductsHeader.classList.remove('fixed-top')
+        selectProductsHeader.classList.remove('scrolled-offset')
+        nextElement.classList.remove('scrolled-offset-max')
+      }
+    }
+    window.addEventListener('load', headerFixed)
+    onscroll(document, headerFixed)
+  }
+
+  /**
    * Scrolls to an element with header offset
    */
   const scrollto = (el) => {
     let header = select('#header')
-    let offset = header.offsetHeight
+    let selectProductsHeader = select('#navbar-example2')
+    let offset = header.offsetHeight + selectProductsHeader?.offsetHeight || 0
+    console.log(header.offsetHeight, selectProductsHeader?.offsetHeight, offset)
 
     let elementPos = select(el).offsetTop
     window.scrollTo({

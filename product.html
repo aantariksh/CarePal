@@ -80,43 +80,41 @@
             Avail Quick Loans With CarePal Money!
           </h1>
           <div class="contact-form prod-form row my-0">
-            <div class="form-field col-lg-6 my-3">
+            <div class="form-field col-lg-6 order-first my-3">
               <input type="text" id="name" class="prod-input-text" name="" placeholder=" " />
               <label for="name" class="label">Name*</label>
             </div>
-            <div class="form-field col-6 my-3">
+            <div class="form-field col-6 order-first my-3">
               <input type="text" id="telephone" class="prod-input-text" name="" placeholder=" " />
               <label for="telephone" class="label">Telephone*</label>
             </div>
-            <div class="form-field col-6 my-3">
-              <input type="text" id="loan-amt" class="prod-input-text" name="" placeholder=" " />
-              <label for="loan-amt" class="label">Loan Amount*</label>
-            </div>
-            <div class="form-field col-lg-6 my-3">
+            <div class="form-field col-lg-6 order-2 order-lg-1 my-3">
               <input type="text" id="email" class="prod-input-text" name="" placeholder=" " />
               <label for="email" class="label">Email*</label>
             </div>
-            <div class="form-field col-lg-6 my-3">
+            <div class="form-field col-lg-6 order-2 order-lg-1 my-3">
               <input type="text" id="salary" class="prod-input-text" name="" placeholder=" " />
               <label for="salary" class="label">Monthly Salary*</label>
             </div>
-            <div class="form-field col-lg-6 my-3">
+            <div class="form-field col-6 order-1 order-lg-2 my-3">
+              <input type="text" id="loan-amt" class="prod-input-text" name="" placeholder=" " />
+              <label for="loan-amt" class="label">Loan Amount*</label>
+            </div>            
+            <div class="form-field col-lg-6 order-last my-3">
               <input type="text" id="treatment" class="prod-input-text" name="" placeholder=" " />
               <label for="treatment" class="label">Treatment*</label>
             </div>
-
-            <div class="form-check col-lg-12 py-2">
+            <div class="form-check col-lg-12 order-last py-2 mx-2">
               <input class="form-check-input cpal-check-input" type="checkbox" value="" id="cpal-terms-check" />
-              <label class="prod-terms-check" for="prod-terms-check">I confirm that I have read and agree to CarePal
+              <label class="prod-terms-check" for="cpal-terms-check">I confirm that I have read and agree to CarePal
                 Money’s
                 <a href="#" class="text-decoration-underline">terms & conditions</a>.</label>
             </div>
-
-            <div class="mt-2 ps-0 text-center">
-              <button type="button" class="btn-apply btn text-white fw-bold col-sm-12">
-                Submit
-              </button>
-            </div>
+          </div>
+          <div class="mt-2 ps-0 text-center">
+            <button type="button" class="btn-apply btn text-white fw-bold col-sm-12">
+              Submit
+            </button>
           </div>
         </form>
         <!-- ====== End Form ======= -->
@@ -142,32 +140,30 @@
 
     <!-- ======= Product Main Navlist ======= -->
     <nav id="navbar-example2" class="prod-nav-list">
-      <ul class="nav prod-nav d-flex flex-nowrap justify-content-evenly">
+      <ul id="navbar-example2-ul" class="nav prod-nav d-flex flex-nowrap justify-content-evenly">
         <li class="nav-item">
-          <a class="nav-link active" href="#scrollspyHeading1">Eligibility</a>
+          <a class="nav-link active scrollto" href="#eligibility">Eligibility</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#cpal-why">Features</a>
+          <a class="nav-link scrollto" href="#cpal-why">Features</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading3">Schemes</a>
+          <a class="nav-link scrollto" href="#schemes">Schemes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading4">Emi Calculator</a>
+          <a class="nav-link scrollto" href="#emi">Emi Calculator</a>
         </li>
         <li class="nav-item pe-4">
-          <a class="nav-link" href="#scrollspyHeading5">FAQs</a>
+          <a class="nav-link scrollto" href="#faq">FAQs</a>
         </li>
       </ul>
-    </nav>
+    </nav>      
     <!-- ======= End Main Navlist ======= -->
     
     <!-- ======= Navlist Items ======= -->
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
-      tabindex="0">
-
+    <div>
       <!-- ======= Product Eligible Section ======= -->
-      <section id="scrollspyHeading1">
+      <section id="eligibility">
         <div id="prod-elig">
           <div class="container">
             <h1 class="cpal-main-head">Are You Eligible?</h1>
@@ -257,9 +253,9 @@
               <img width="549" height="576" src="./assets/img/why_carepal/why-cpal-phone.png" alt="" />
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12">
-              <h1 class="cpal-main-head">Why CarePal Money?</h1>
+              <h1 class="cpal-main-head">Why Choose CarePal Money?</h1>
 
-              <div class="mt-5 mb-4 d-flex justify-content-between flex-wrap cpal-why-items">
+              <div class="mt-lg-5 mb-3 d-flex justify-content-between flex-wrap cpal-why-items">
                 <div class="mb-4 d-flex">
                   <img src="./assets/img/Icons/why-cpal/Hassle-Free-Approve.png" alt="" />
                   <span class="ps-2">Hassle Free Approval</span>
@@ -286,8 +282,8 @@
                 </div>
               </div>
 
-              <div class="mt-2 ps-0 why-btn-cont">
-                <button type="button" class="btn-apply btn text-white fw-bold col-sm-12">
+              <div class="ps-0 why-btn-cont">
+                <button onclick="location.href='#'" class="btn-apply btn text-white fw-bold col-sm-12">
                   Apply Now
                 </button>
               </div>
@@ -298,7 +294,7 @@
       <!--========== End Why  =========-->
 
       <!-- ======= CarePal Scheme Section ======= -->
-      <section id="scrollspyHeading3">
+      <section id="schemes">
         <div id="prod-calc-emi" class="prod-calc-emi bg-light py-5">
           <div class="container">
             <div class="row">
@@ -314,7 +310,7 @@
                     <thead>
                       <tr>
                         <th scope="col">Scheme</th>
-                        <th scope="col">Tenure (in months)</th>
+                        <th scope="col">Tenure <br class="d-md-none"> (in months)</th>
                         <th scope="col">Advance EMI*</th>
                         <th scope="col">Remaining EMI**</th>
                       </tr>
@@ -499,7 +495,7 @@
       <!-- ======= End CarePal Scheme Section ======= -->
 
       <!-- ======= Calculate EMI Section ======= -->
-      <section id="scrollspyHeading4">
+      <section id="emi">
         <div id="prod-calc-emi" class="prod-calc-emi py-3">
           <div class="container">
             <h1 class="cpal-main-head">
@@ -575,7 +571,7 @@
                 <div class="calc-result border d-flex flex-column justify-content-end align-items-center ">
                   <p>Your Calculated EMI</p>
                   <h3 class="py-1 mb-5" id="CalculatedEMI">₹ XYZ,123,12</h3>
-                  <button class="w-75">Apply Now</button>
+                  <button onclick="location.href='#'" class="w-75">Apply Now</button>
                 </div>
               </div>
               <!-- ======= End Result Box ======= -->
@@ -586,7 +582,7 @@
       <!-- ======= End Calculate EMI Section ======= -->
 
       <!-- ======= FAQs Section ======= -->
-      <div id="scrollspyHeading5">
+      <div id="faq">
         <div id="faq" class="faq py-5">
           <div class="container">
             <h1 class="cpal-main-head">FAQs</h1>
@@ -605,7 +601,7 @@
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Who can apply for a loan
+                  <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed pe-5">Who can apply for a loan
                     with CarePal Money?
                     <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
@@ -616,9 +612,9 @@
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">What is the interest
+                  <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed pe-5">What is the interest
                     charged on loans availed from
-                    CarePal Money? <i class="bx bx-chevron-down icon-show border"></i><i
+                    CarePal Money? <i class="bx bx-chevron-down icon-show"></i><i
                       class="bx bx-chevron-up icon-close"></i></a>
                   <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                     <p>
@@ -677,46 +673,41 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
     <div class="footer-top">
       <div class="container">
         <div class="row d-flex align-items-center">
-
-          <div class="col-lg-6 col-md-6 footer-contact">
+          <div class="col-lg-5 col-md-6 footer-contact">
             <a href="index.html"><img width="184" height="48" src="assets/img/footer/footer-logo.png" alt=""
                 class="img-fluid"></a>
-            <p class="text-white my-3">Copyright © 2022 CarePal Money. All rights reserved.</p>
-
+            <p class="text-white my-3 d-none d-md-block">Copyright © 2022 CarePal Money. All rights reserved.</p>
           </div>
-           <div class="col-lg-6 col-12">
-              <div class="row">
-                <div class="col-lg-3 col-4 footer-links">
-                  <h4>General</h4>
+          <div class="col-lg-7 col-12">
+            <div class="row">
+              <div class="col-lg-3 col-4 footer-links">
+                <h4><span>General</span></h4>
+                <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="#">How it works</a></li>
+                  <li><a href="./about.html">About Us</a></li>
+                </ul>
+              </div>
+    
+                <div class="col-lg-8 col-8 footer-links">
+                  <h4><span>Reach out to us</span></h4>
                   <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="./about.html">About Us</a></li>
+                    <li><img src="./assets/img/footer/call.svg" class="pe-2" alt="" /> 1800 121 8200</li>
+                    <li><img src="./assets/img/footer/email.svg" class="pe-2" alt=""> contact@ carepalmoney.com /
+                        info@ carepalmoney.com</li>
+                    <li><img src="./assets/img/footer/location.svg" class="pe-2" alt="" /> Corporate office 3rd Floor,
+                        Vaman Centre, Makwana Rd, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059</li>
                   </ul>
                 </div>
-     
-                 <div class="col-lg-8 col-8 footer-links">
-                   <h4>Reach out to us</h4>
-                   <ul>
-                     <li><img src="./assets/img/footer/call.svg" class="pe-2" alt="" /> 1800 121 8200</li>
-                     <li><img src="./assets/img/footer/email.svg" class="pe-2" alt=""> contact @carepalmoney.com /
-                         info @carepalmoney.com</li>
-                     <li><img src="./assets/img/footer/location.svg" class="pe-2" alt="" /> Corporate office 3rd Floor,
-                         Vaman Centre, Makwana Rd, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059</li>
-                   </ul>
-                 </div>
-              </div>
-           </div>
-
+            </div>
+          </div>
         </div>
+        <p class="text-white d-md-none mt-3 mb-0">Copyright © 2022 CarePal Money. All rights reserved.</p>
       </div>
     </div>
-
-
   </footer>
   <!-- End Footer -->
 
@@ -732,4 +723,17 @@
   <script src="assets/js/main.js"></script>
 </body>
 
+<script>
+   if (window.innerWidth <= 700) {
+    // Mobile View
+    let nav = document.getElementById("navbar-example2-ul")
+    nav.classList.add('justify-content-between')
+    nav.classList.remove('justify-content-evenly')
+  } else {
+    // Desktop View
+    let nav = document.getElementById("navbar-example2-ul")
+    nav.classList.add('justify-content-evenly')
+    nav.classList.remove('justify-content-between')
+  }
+</script>
 </html>
