@@ -14,7 +14,6 @@ contactForm.addEventListener("submit", function (event) {
   const formData = Object.fromEntries(formProps);
   
   const { name, telephone, email, salary, loanAmount, treatment } = formData;
-  console.log("Here", formData)
 
   if (
     !name ||

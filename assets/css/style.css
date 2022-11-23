@@ -5,13 +5,18 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
-  /* font-family: 'Varela Round', sans-serif; */
   color: #4b4b4b;
+  overflow-x: hidden;
 }
+
+@media screen and (min-width: 900px) {
+  body { font-size: 21px; }
+}
+.container { padding-left: 18px; padding-right: 18px; }
 
 .scrolled-offset {
   margin-top: 65px;
-  border-top: 2px solid #00000029;
+  border-top: 1px solid #00000025;
 }
 .scrolled-offset-max {
   margin-top: 65px;
@@ -196,6 +201,7 @@ span{
   background: #1E75BB 0% 0% no-repeat padding-box;
   height: 80px;
 }
+.cpal-bottom-acont>button{ font-size: 20px; }
 .cpal-bottom-acont.active{
   display: none;
 }
@@ -219,9 +225,8 @@ span{
     width: 291px;
     height: 44px;
   }
-  .cpal-bottom-acont {
-    height: 70px;
-  }
+  .cpal-bottom-acont { height: 70px; }
+  .cpal-bottom-acont>button{ font-size: 16px; }
 }
 
 /*--------------------------------------------------------------
@@ -550,12 +555,11 @@ span{
   border-radius: 16px;
   opacity: 1;
 }
-.hero-det>h1{
-  font: normal normal bold 44px/56px Roboto;
-  border-left: 4px solid #1E75BB;
-  color: #1E75BB;
-
+#hero h1 {
+  font-size: 38px;
+  height: 45px;
 }
+
 .hero-det>p{
   font: normal normal normal 21px/32px Roboto;
   color: #4B4B4B;
@@ -599,7 +603,7 @@ span{
   }
   #hero h1 {
     font-size: 28px;
-    line-height: 36px;
+    height: 30px;
   }
 
   #hero h2 {
@@ -622,7 +626,7 @@ span{
   }
  
   .hero-det>p{
-    font: normal normal normal 16px/23px Roboto;
+    font: normal normal normal 17px/23px Roboto;
   }
   .hero-det>div>div>img{
     width:32px;
@@ -752,10 +756,10 @@ span{
   font: normal normal bold 32px/55px Roboto;
   color: #fff;
 }
-
-.cpal-work-btm{
+/* 
+.cpal-work-btn{
   display: none !important;
-}
+} */
 
 .cpal-main-head{
   font: normal normal bold 38px/45px Roboto;
@@ -773,13 +777,12 @@ span{
     background-size: cover;
     padding-bottom: 15px;
   }
-  .cpal-work-btm{
+  .cpal-work-btn{
     width: 100%;
     min-height: 39px;
     height: fit-content;
     background-color: #1C75BC ;
-    box-shadow: -3px -3px 6px  #1C75BC;
-    display: flex !important;
+    box-shadow: -0.4rem -0.4rem #1c74bc9d;
     border-radius: 4px;
   }
   .cpal-work-video{
@@ -906,6 +909,23 @@ span{
   background: url('../img/Icons/treatment/Hover-treat/Dental-Treatments.png') center center no-repeat;
   background-size: cover;
 }
+
+.card-ent-img{
+  background: url('../img/Icons/treatment/ENT.png') center center no-repeat;
+}
+.cpal-card:hover .card-ent-img{
+  background: url('../img/Icons/treatment/Hover-treat/ENT.png') center center no-repeat;
+  background-size: cover;
+}
+
+.card-other-elective-img{
+  background: url('../img/Icons/treatment/Other-Elective-Surgery.png') center center no-repeat;
+}
+.cpal-card:hover .card-other-elective-img{
+  background: url('../img/Icons/treatment/Hover-treat/Other-Elective-Surgery.png') center center no-repeat;
+  background-size: cover;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -1042,6 +1062,9 @@ span{
   .cpal-tform-head{
     font: normal normal bold 26px/31px Roboto;
   }
+  .contact-form{
+    margin-top: 0;
+  }
   .contact-form .label {
     font: normal normal bold 14px/19px Roboto;
   }
@@ -1062,6 +1085,10 @@ span{
     background:transparent url("../img/form/form-mob-back.png") center left no-repeat;
     background-size: cover;
   }
+  .cpal-form-submit{
+    max-width: 100%;
+    height: 50px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1077,11 +1104,11 @@ span{
   height: 550px;
 }
 .prod-hero-main{
-  margin-top:60px;
-  height: 530px;
+  margin-top:65px;
+  height: 500px;
   background: transparent url('../img/banner/prod-banner.png') 0% 0% no-repeat padding-box;
   position: relative;
-  background-size: cover;
+  background-size: contain;
 }
 
 .prod-hero-det{
@@ -1183,12 +1210,9 @@ span{
 # Product List Navigation
 --------------------------------------------------------------*/
 
-.prod-hr-line{
-  box-shadow: 0px 2px 3px #00000029;
-}
 .prod-nav-list{
   background-color: #FFF;
-  border-bottom: 2px solid #00000029;
+  border-bottom: 1px solid #00000025;
 }
 .prod-nav-list li>a{
   padding: 20px 0;
@@ -1323,6 +1347,7 @@ span{
 .calc-result>p{
   font: normal normal 300 22px/36px Roboto;
   color: #FFFFFF;
+  margin-bottom: 5px;
 }
 .calc-result>h3{
   font: normal normal bold 38px/45px Roboto;
@@ -1402,7 +1427,6 @@ span{
   .calc-result {
     height: 340px;
   }
-
 }
 
 
@@ -1522,13 +1546,9 @@ tr:last-child> td:last-child{
   list-style: none;
 }
 
-.faq .faq-list li+li {
-  margin-top: 15px;
-}
-
 .faq .faq-list li {
   padding:15px 20px;
-  margin-bottom:30px;
+  margin-bottom:24px;
   background: #fff;
   border-radius: 4px;
   position: relative;
@@ -1601,7 +1621,7 @@ tr:last-child> td:last-child{
     font: normal normal normal 16px/23px Roboto;
   }
   .faq .faq-list li {
-    margin-bottom:10px;
+    margin-bottom:16px;
   }
 }
 
@@ -1665,7 +1685,6 @@ tr:last-child> td:last-child{
   width: 291px;
 }
 .ptnr-item>div>img{
-  width: 200px;
   height: 80px;
 }
 .ptnr-item a{
@@ -1729,8 +1748,8 @@ tr:last-child> td:last-child{
     width: 195px;
   }
   .ptnr-item>div>img{
-    width: 164px;
-    height: 70px;
+    width: 180px;
+    height: 60px;
   }
   .ptnr-item a{
     display: block;

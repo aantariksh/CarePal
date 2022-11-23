@@ -19,6 +19,8 @@ export function failMessage(err) {
     text:
       err ||
       "Something went wrong! Please try again later Or reach us via email/phone.",
+    timerProgressBar: true, timer: 5000,
+    confirmButtonColor: '#1E75BB',      
   }).then(() => location.reload());
 }
 
@@ -27,5 +29,7 @@ export function successMessage() {
     icon: "success",
     title: "Submitted!",
     text: "Thank you for reaching out to us! Our team will get back to you soon",
+    timerProgressBar: true, timer: 5000,
+    confirmButtonColor: '#1E75BB',
   }).then(() => location.reload());
 }

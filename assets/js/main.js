@@ -126,12 +126,12 @@
   }
 
   /**
-   * Back to top button
+   * Apply Now fixed bottom button
    */
    let fixedBottom = select('.fixed-bottom')
    if (fixedBottom) {
      const hideFixedBottom = () => {
-       if (window.scrollY > 2000) {
+       if (window.scrollY < 200 || window.scrollY > 2000) {
         fixedBottom.classList.add('active')
        } else {
         fixedBottom.classList.remove('active')
@@ -146,6 +146,14 @@
    */
   on('click', '.mobile-nav-toggle', function(e) {
     select('#navbar').classList.toggle('navbar-mobile')
+    try { select('body').classList.toggle('overflow-hidden') } catch (e) {}
+    try { 
+      let productNavClasses = select('#navbar-example2').classList
+      if (productNavClasses?.value.includes('scrolled-offset')) {
+        productNavClasses.toggle('fixed-top')
+      }
+    } catch (e) { console.log(e) }
+    try { select('.cpal-bottom-acont').classList.toggle('fixed-bottom') } catch (e) {}
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
   })
@@ -285,5 +293,5 @@ function calcSlider(){
    document.getElementById('calc-value1').innerText = mySlider1.value;
    document.getElementById('calc-value2').innerText = mySlider2.value;
    document.getElementById('calc-value3').innerText = mySlider3.value;
-   document.getElementById('CalculatedEMI').innerHTML = "₹ " + Math.round(mySlider1.value * (1/mySlider2.value + mySlider3.value/100));
+   document.getElementById('CalculatedEMI').innerHTML = "₹" + Math.round(mySlider1.value * (1/mySlider2.value + mySlider3.value/100));
 }

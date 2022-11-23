@@ -108,7 +108,7 @@
               <input class="form-check-input cpal-check-input" type="checkbox" value="" id="cpal-terms-check" required/>
               <label class="prod-terms-check" for="cpal-terms-check">I confirm that I have read and agree to CarePal
                 Money’s
-                <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="text-decoration-underline">terms & conditions</a>.</label>
+                <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="text-decoration-underline" style="cursor: pointer">terms & conditions</a>.</label>
             </div>
           </div>
           <div class="mt-2 ps-0 text-center">
@@ -125,15 +125,11 @@
   <main id="main">
     <!-- ======= Loan Info Paragraph ======= -->
     <div class="prod-loan-info container py-4 text-center">
-      <p>
-        Loan tenure from 3-60 months with monthly interest varying from 1.33%
-        - 2.5%. Annual Interest rates vary from 16% - 36%* The standard
-        processing fee varies from 2.5% to 4% of the loan amount.For example,
-        a loan of ₹50,000 with an APR of 18% and 24 month tenure total
-        interest & fees will be ₹11,679 *These numbers are indicative and
-        final interest rate or processing fee may vary from one user to
-        another depending on the credit assessment.
-      </p>
+      <p>Loan tenure from 3-60 months with monthly interest varying from
+        1.33% - 2.5%. Annual Interest rates vary from 16% - 36%*. The standard processing fee varies from 2.5% to 4%
+        of the loan amount. For example, a loan of ₹50,000 with an APR of 18% and 24 month tenure total interest &
+        fees will be ₹11,679*. These numbers are indicative and final interest rate or processing fee may vary from
+        one user to another depending on the credit assessment.</p>      
     </div>
 
     <!-- ======= Product Main Navlist ======= -->
@@ -149,7 +145,7 @@
           <a class="nav-link scrollto" href="#schemes">Schemes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link scrollto" href="#emi">Emi Calculator</a>
+          <a class="nav-link scrollto" href="#emi">EMI Calculator</a>
         </li>
         <li class="nav-item pe-4">
           <a class="nav-link scrollto" href="#faq">FAQs</a>
@@ -248,7 +244,7 @@
         <div class="cpal-why-cont container my-5">
           <div class="row d-flex align-items-center justify-content-between flex-wrap">
             <div class="col-lg-6 col-md-12 col-sm-12 my-5 cpal-why-img ">
-              <img width="549" height="576" src="./assets/img/why_carepal/why-cpal-phone.png" alt="" />
+              <img width="549" height="576" src="./assets/img/why_carepal/Product.png" alt="" />
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12">
               <h1 class="cpal-main-head">Why Choose CarePal Money?</h1>
@@ -306,7 +302,7 @@
                 <div class="col-lg-10">
                   <table class="table table-borderless text-center cpal-scheme">
                     <thead>
-                      <tr>
+                      <tr class="text-nowrap align-middle">
                         <th scope="col">Scheme</th>
                         <th scope="col">Tenure <br class="d-md-none"> (in months)</th>
                         <th scope="col">Advance EMI*</th>
@@ -376,8 +372,8 @@
                     <div class="text-center mt-4 mb-3 fw-bold">Example 1</div>
                     <table class="table table-borderless text-center cpal-scheme border-ro">
                       <thead>
-                        <tr>
-                          <th scope="col">Sr. no.</th>
+                        <tr class="text-nowrap align-middle">
+                          <th scope="col">Sr. No.</th>
                           <th scope="col">Particulars</th>
                           <th scope="col">Amount</th>
                         </tr>
@@ -416,7 +412,7 @@
                         <tr>
                           <td scope="row">g</td>
                           <td>Remaining EMI to be paid by customer to lender (c*f)</td>
-                          <td>₹ 80,000</td>
+                          <td>₹80,000</td>
                         </tr>
                         <tr>
                           <td scope="row">h</td>
@@ -431,7 +427,7 @@
                     <div class="text-center mt-4 mb-3  fw-bold">Example 2</div>
                     <table class="table table-borderless text-center cpal-scheme border-ro">
                       <thead>
-                        <tr>
+                        <tr class="text-nowrap align-middle">
                           <th scope="col">Sr. No.</th>
                           <th scope="col">Particulars</th>
                           <th scope="col">Amount</th>
@@ -509,15 +505,15 @@
                       <p>Loan Amount</p>
                       <div class="calc-amt-box">
                         <span class="border-end border-2 px-3"><i class="bi bi-currency-rupee"></i></span>
-                        <span class="px-2" id="calc-value1">50,000</span>
+                        <span class="px-2" id="calc-value1" contenteditable>50,000</span>
                       </div>
                     </div>
 
                     <div>
                         <div class="calc-field d-flex align-items-center justify-content-between">
-                            <div class="value-left">₹50k</div>
-                            <input type="range" id="calc-slider1" min="50000" max="2500000" value="50000" step="10000"  oninput="calcSlider()">
-                            <div class="value-right">₹25L</div>
+                            <div class="value-left">₹5k</div>
+                            <input type="range" id="calc-slider1" min="5000" max="500000" value="50000" step="10000"  oninput="calcSlider()">
+                            <div class="value-right">₹5L</div>
                         </div>
                     </div>
                   </div>
@@ -526,17 +522,17 @@
                   <!-- ======= EMI Tenor ======= -->
                   <div class="emi-calc-item mt-3">
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                      <p>Tenor</p>
+                      <p>Tenure</p>
                       <div class="calc-amt-box">
-                        <span class="border-end border-2 px-3" id="calc-value2">12</span>
+                        <span class="border-end border-2 px-3" id="calc-value2" contenteditable>12</span>
                         <span class="px-2">Months</span>
                       </div>
                     </div>
                     <div>
                       <div class="calc-field d-flex align-items-center justify-content-between">
                         <div class="value-left">12M</div>
-                        <input type="range" id="calc-slider2" min="12" max="24" value="12" step="1"  oninput="calcSlider()">
-                        <div class="value-right">24M</div>
+                        <input type="range" id="calc-slider2" min="12" max="18" value="12" step="1"  oninput="calcSlider()">
+                        <div class="value-right">18M</div>
                     </div>
                     </div>
                   </div>
@@ -547,15 +543,15 @@
                     <div class="d-flex align-items-center justify-content-between mb-3">
                       <p>Interest Rate</p>
                       <div class="calc-amt-box px-2">
-                        <span class="px-2 w-75 d-inline-block" id="calc-value3">10</span>
-                        <span class="border-start border-2 ps-2">%</span>
+                        <span class="px-2 w-75 d-inline-block" id="calc-value3">0</span>
+                        <span class="border-start border-2 ps-0">%</span>
                       </div>
                     </div>
                     <div>
                       <div class="calc-field d-flex align-items-center justify-content-between">
-                        <div class="value-left">10%</div>
-                        <input type="range" id="calc-slider3" min="10" max="35" value="10" step="1"  oninput="calcSlider()">
-                        <div class="value-right">35%</div>
+                        <div class="value-left">0%</div>
+                        <input type="range" id="calc-slider3" min="0" max="0" value="0" step="0"  oninput="calcSlider()">
+                        <div class="value-right">0%</div>
                       </div>
                     </div>
                   </div>
@@ -568,7 +564,7 @@
               <div class="col-lg-4 col-sm-12">
                 <div class="calc-result border d-flex flex-column justify-content-end align-items-center ">
                   <p>Your Calculated EMI</p>
-                  <h3 class="py-1 mb-5" id="CalculatedEMI">₹ XYZ,123,12</h3>
+                  <h3 class="mb-3 mb-lg-5" id="CalculatedEMI">₹XYZ,123,12</h3>
                   <button onclick="location.href='#'" class="w-75">Apply Now</button>
                 </div>
               </div>
@@ -604,7 +600,7 @@
                     <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                     <p>
-                      Any Indian citizen above the age of 23 years and below the age of 65 years can apply for healthcare loans at CarePal Money
+                      Any Indian citizen above the age of 23 years and below the age of 65 years can apply for healthcare loans at CarePal Money.
                     </p>
                   </div>
                 </li>
@@ -620,7 +616,7 @@
                       at 0%*. Apart from this, you can choose from a variety
                       of lending schemes having different terms and conditions
                       including flexible interest rates. To know more about
-                      our lending schemes, connect with us at contact@carepalmoney.com / info@carepalmoney.com or 1800 121 8200
+                      our lending schemes, connect with us at contact@carepalmoney.com / info@carepalmoney.com or 1800 121 8200.
                     </p>
                   </div>
                 </li>

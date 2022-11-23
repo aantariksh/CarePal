@@ -73,10 +73,12 @@
     <div class="row position-relative">
       <div class="hero-main col-sm-12 col-lg-9">
         <div class="hero-det position-absolute row">
-          <h1 class="ps-3">CarePal Money</h1>
-          <p class="fs-6 ps-0">Making quality healthcare accessible through quick and affordable loans, <span
-              class="fw-bold">starting at 0% EMI!</span></p>
-
+          <!-- <h1 class="cpal-main-head">CarePal Money</h1> -->
+          <h1 class="cpal-main-head">CarePal Money</h1>
+          <br>
+          <p class="ps-0">Making quality healthcare accessible through quick and affordable loans, 
+            <span class="fw-bold">starting at 0% EMI!</span>
+          </p>
           <div class="my-4 d-flex justify-content-between hero-det-item px-lg-2 px-0">
               <div class="border-end border-2 d-flex align-items-center flex-wrap">
                 <img src="./assets/img/Icons/banner/Quick Approve.png"  alt=""> 
@@ -108,7 +110,7 @@
     <section id="carepal-work">
       <div class="container py-5">
         <h1 class="cpal-main-head">How CarePal Money Works</h1>
-        <p class="fs-6 ">CarePal Money in partnership with RBI Regulated Entities/ NBFCs helps you avail loans in a few
+        <p>CarePal Money in partnership with RBI Regulated Entities/ NBFCs helps you avail loans in a few
           simple steps!</span></p>
 
         <div class="row d-flex justify-content-center align-items-center py-4 mx-2">
@@ -127,8 +129,8 @@
               <div class="carousel-inner pb-4">
                 <div class="carousel-item active">
                   <div class="mb-3 d-flex justify-content-center"><span>1</span></div>
-                  <h2>Apply For Your Healthcare Needs</h2>
-                  <p class="py-3">Fill the form given below and our lending team experts will connect with you to help choose the
+                  <h2>Fill the Form Given Below</h2>
+                  <p class="py-3">Our lending team experts will connect with you to help choose the
                     best scheme based on your healthcare needs.</p>
                 </div>
                 <div class="carousel-item">
@@ -158,11 +160,11 @@
               <img src="./assets/img/work/play-icon.svg" alt="" id="vid-play-btn" onclick="toggleVideo()" />
             </div>
 
-            <div class="p-2 col-sm-12 d-flex justify-content-between aligm-item-center flex-wrap cpal-work-btm">
-              <div class="fs-6 fw-bold text-white">For better understanding </div>
-              <a href="" class="text-decoration-underline text-white fs-6 fw-light">
-                <img src="./assets/img/work/play-icon.svg"
-                  width="16" height="16" alt=""> See video
+            <div class="d-lg-none p-2 col-sm-12 d-flex justify-content-between aligm-item-center flex-wrap cpal-work-btn">
+              <div class="fw-bold text-white px-3">For better understanding </div>
+                <a href="" class="text-decoration-underline text-white fw-light">
+                  <img src="./assets/img/work/play-icon.svg" width="16" height="16" alt=""> 
+                  See video
                 </a>
             </div>
           </div>
@@ -177,7 +179,7 @@
       <div class="cpal-why-cont container my-5">
         <div class="row d-flex align-items-center justify-content-between flex-wrap">
           <div class="col-lg-6 col-md-12 col-sm-12 my-5 cpal-why-img ">
-            <img width="549" height="576" src="./assets/img/why_carepal/why-cpal-phone.png" alt="" />
+            <img width="549" height="576" src="./assets/img/why_carepal/Product.png" alt="" />
           </div>
           <div class="col-lg-6 col-md-12 col-sm-12">
             <h1 class="cpal-main-head">Why CarePal Money?</h1>
@@ -225,7 +227,7 @@
       <div class=" cpal-treat-cont py-5">
         <div class="container">
           <h1 class="cpal-main-head">Medical Treatments You Can Apply For</h1>
-          <p class="fs-6">Below is the list of healthcare services we help finance:</span></p>
+          <p>Below is a list of healthcare services we help finance:</span></p>
 
           <div class="swiper treatment-slider py-4">
             <div class="swiper-wrapper">
@@ -243,7 +245,7 @@
               </div>
               <div class="swiper-slide cpal-card py-2 px-1 mb-2 flex-column">
                 <div class="card-bariatric-img"></div>
-                <h4 class="text-center mt-2 flex-column">Bariatric Surgery & weight loss treatment</h4>
+                <h4 class="text-center mt-2 flex-column">Bariatric Surgery & Weight Loss Treatment</h4>
               </div>
               <div class="swiper-slide cpal-card py-2 px-1 mb-2 flex-column">
                 <div class="card-ortho-img"></div>
@@ -253,7 +255,14 @@
                 <div class="card-dental-img"></div>
                 <h4 class="text-center mt-2">Dental Treatments</h4>
               </div>
-
+              <div class="swiper-slide cpal-card py-2 px-1 mb-2 flex-column">
+                <div class="card-other-elective-img"></div>
+                <h4 class="text-center mt-2">Other Elective Treatments</h4>
+              </div>                            
+              <div class="swiper-slide cpal-card py-2 px-1 mb-2 flex-column">
+                <div class="card-ent-img"></div>
+                <h4 class="text-center mt-2">ENT</h4>
+              </div>
             </div>
           </div>
         </div>
@@ -270,32 +279,32 @@
             <div class="col-lg-4 col-sm-12">
               <h1 class="fs-2 ps-3 fw-bold cpal-tform-head">Cover The Cost Of Your Elective Medical Treatment With
                 CarePal Money</h1>
-              <p class="mt-4 text-white">Avail flexible and customized lending schemes with affordable payment options.
+              <p class="mt-4 text-white">Avail flexible and customized lending schemes with affordable payment options!
               </p>
             </div>
             <div class="col-lg-6 col-sm-12">
               <div class="contact-form row">
-                <div class="form-field col-lg-6 order-first my-4">
+                <div class="form-field col-lg-6 order-first my-3 my-lg-4">
                   <input type="text" id="name" class="input-text" name="name" placeholder=" " required />
                   <label for="name" class="label">Name*</label>
                 </div>
-                <div class="form-field col-6 order-first my-4">
+                <div class="form-field col-6 order-first my-3 my-lg-4">
                   <input type="tel" id="telephone" class="input-text" name="telephone" placeholder=" " pattern="[0-9]{10,12}" required />
                   <label for="telephone" class="label">Telephone*</label>
                 </div>
-                <div class="form-field col-lg-6 order-2 order-lg-1 my-4">
+                <div class="form-field col-lg-6 order-2 order-lg-1 my-3 my-lg-4">
                   <input type="email" id="email" class="input-text" name="email" placeholder=" " required />
                   <label for="email" class="label">Email*</label>
                 </div>
-                <div class="form-field col-lg-6 order-2 order-lg-1 my-4">
+                <div class="form-field col-lg-6 order-2 order-lg-1 my-3 my-lg-4">
                   <input type="number" id="salary" class="input-text" name="salary" min="1" placeholder=" " required />
                   <label for="salary" class="label">Monthly Salary (in ₹)*</label>
                 </div>
-                <div class="form-field col-6 order-1 order-lg-2 my-4">
+                <div class="form-field col-6 order-1 order-lg-2 my-3 my-lg-4">
                   <input type="number" id="loan-amt" class="input-text" name="loanAmount" placeholder=" " required />
                   <label for="loan-amt" min="1" class="label">Loan Amount*</label>
                 </div>
-                <div class="form-field col-lg-6 order-last my-4">
+                <div class="form-field col-lg-6 order-last my-3 my-lg-4">
                   <input type="text" id="treatment" class="input-text" name="treatment" placeholder=" " required />
                   <label for="treatment" class="label">Treatment*</label>
                 </div>
@@ -303,8 +312,10 @@
                 <div class="form-check col-lg-12 order-last mx-2">
                   <input class="form-check-input cpal-check-input" type="checkbox" value="" id="cpal-terms-check" required />
                   <label class="form-check-label cpal-check-label" for="cpal-terms-check">I confirm that I have read and
-                    agree to CarePal Money’s <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="text-white text-decoration-underline">terms &
-                      conditions</a>.</label>
+                    agree to CarePal Money’s 
+                    <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="text-white text-decoration-underline"
+                      style="cursor: pointer;">terms & conditions</a>.
+                    </label>
                 </div>
               </div>
               <div class="mt-3 ps-0 text-center">
@@ -313,9 +324,9 @@
             </div>
           </div>
           <p class="my-4 ctreat-form-para text-white">Loan tenure from 3-60 months with monthly interest varying from
-            1.33% - 2.5%. Annual Interest rates vary from 16% - 36%* The standard processing fee varies from 2.5% to 4%
-            of the loan amount.For example, a loan of ₹50,000 with an APR of 18% and 24 month tenure total interest &
-            fees will be ₹11,679 *These numbers are indicative and final interest rate or processing fee may vary from
+            1.33% - 2.5%. Annual Interest rates vary from 16% - 36%*. The standard processing fee varies from 2.5% to 4%
+            of the loan amount. For example, a loan of ₹50,000 with an APR of 18% and 24 month tenure total interest &
+            fees will be ₹11,679*. These numbers are indicative and final interest rate or processing fee may vary from
             one user to another depending on the credit assessment.</p>
         </div>
       </div>
