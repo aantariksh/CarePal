@@ -73,7 +73,6 @@
     <div class="row position-relative">
       <div class="hero-main col-sm-12 col-lg-9">
         <div class="hero-det position-absolute row">
-          <!-- <h1 class="cpal-main-head">CarePal Money</h1> -->
           <h1 class="cpal-main-head">CarePal Money</h1>
           <br>
           <p class="ps-0">Making quality healthcare accessible through quick and affordable loans, 
@@ -160,8 +159,8 @@
               <img src="./assets/img/work/play-icon.svg" alt="" id="vid-play-btn" onclick="toggleVideo()" />
             </div>
 
-            <div class="d-lg-none p-2 col-sm-12 d-flex justify-content-between aligm-item-center flex-wrap cpal-work-btn">
-              <div class="fw-bold text-white px-3">For better understanding </div>
+            <div class="d-lg-none p-2 col-sm-12 d-flex justify-content-around aligm-item-center flex-wrap cpal-work-btn">
+              <div class="fw-bold text-white">For better understanding </div>
                 <a href="" class="text-decoration-underline text-white fw-light">
                   <img src="./assets/img/work/play-icon.svg" width="16" height="16" alt=""> 
                   See video
@@ -237,7 +236,7 @@
               </div>
               <div class="swiper-slide cpal-card py-2 px-1 mb-2 flex-column">
                 <div class="card-ivf-img"></div>
-                <h4 class="text-center mt-2">IVF and Maternity Care Treatment</h4>
+                <h4 class="text-center mt-2">IVF and Maternity <br> Care Treatment</h4>
               </div>
               <div class="swiper-slide cpal-card py-2 px-1 mb-2 flex-column">
                 <div class="card-hair-img"></div>
@@ -284,32 +283,32 @@
             </div>
             <div class="col-lg-6 col-sm-12">
               <div class="contact-form row">
-                <div class="form-field col-lg-6 order-first my-3 my-lg-4">
+                <div class="form-field col-lg-6 order-first my-3 my-lg-4 px-0 pe-lg-3">
                   <input type="text" id="name" class="input-text" name="name" placeholder=" " required />
                   <label for="name" class="label">Name*</label>
                 </div>
-                <div class="form-field col-6 order-first my-3 my-lg-4">
+                <div class="form-field col-6 order-first my-3 my-lg-4 px-0 pe-2 pe-lg-0">
                   <input type="tel" id="telephone" class="input-text" name="telephone" placeholder=" " pattern="[0-9]{10,12}" required />
                   <label for="telephone" class="label">Telephone*</label>
                 </div>
-                <div class="form-field col-lg-6 order-2 order-lg-1 my-3 my-lg-4">
+                <div class="form-field col-lg-6 order-2 order-lg-1 my-3 my-lg-4 px-0 pe-lg-3">
                   <input type="email" id="email" class="input-text" name="email" placeholder=" " required />
                   <label for="email" class="label">Email*</label>
                 </div>
-                <div class="form-field col-lg-6 order-2 order-lg-1 my-3 my-lg-4">
+                <div class="form-field col-lg-6 order-2 order-lg-1 my-3 my-lg-4 px-0">
                   <input type="number" id="salary" class="input-text" name="salary" min="1" placeholder=" " required />
                   <label for="salary" class="label">Monthly Salary (in ₹)*</label>
                 </div>
-                <div class="form-field col-6 order-1 order-lg-2 my-3 my-lg-4">
+                <div class="form-field col-6 order-1 order-lg-2 my-3 my-lg-4 ps-lg-0 pe-0 pe-lg-3">
                   <input type="number" id="loan-amt" class="input-text" name="loanAmount" placeholder=" " required />
                   <label for="loan-amt" min="1" class="label">Loan Amount*</label>
                 </div>
-                <div class="form-field col-lg-6 order-last my-3 my-lg-4">
+                <div class="form-field col-lg-6 order-last my-3 my-lg-4 px-0">
                   <input type="text" id="treatment" class="input-text" name="treatment" placeholder=" " required />
                   <label for="treatment" class="label">Treatment*</label>
                 </div>
 
-                <div class="form-check col-lg-12 order-last mx-2">
+                <div class="form-check col-lg-12 order-last">
                   <input class="form-check-input cpal-check-input" type="checkbox" value="" id="cpal-terms-check" required />
                   <label class="form-check-label cpal-check-label" for="cpal-terms-check">I confirm that I have read and
                     agree to CarePal Money’s 

@@ -223,7 +223,7 @@ span{
   }
   .apply-btm-link{
     width: 291px;
-    height: 44px;
+    height: 50px;
   }
   .cpal-bottom-acont { height: 70px; }
   .cpal-bottom-acont>button{ font-size: 16px; }
@@ -556,8 +556,8 @@ span{
   opacity: 1;
 }
 #hero h1 {
-  font-size: 38px;
-  height: 45px;
+  font-size: 44px;
+  height: 48px;
 }
 
 .hero-det>p{
@@ -602,8 +602,8 @@ span{
     height: 670px;
   }
   #hero h1 {
-    font-size: 28px;
-    height: 30px;
+    font-size: 32px;
+    height: 36px;
   }
 
   #hero h2 {
@@ -635,7 +635,7 @@ span{
   
   .btn-apply{
     max-width: 311px;
-    height: 44px;
+    height: 50px;
     margin:0 auto;
     font: normal normal bold 16px/24px Roboto;
   }
@@ -756,10 +756,6 @@ span{
   font: normal normal bold 32px/55px Roboto;
   color: #fff;
 }
-/* 
-.cpal-work-btn{
-  display: none !important;
-} */
 
 .cpal-main-head{
   font: normal normal bold 38px/45px Roboto;
@@ -856,7 +852,7 @@ span{
   
 }
 .cpal-card>h4{
-  font: normal normal bold 16px/22px Roboto;
+  font: normal normal bold 15px/22px Roboto;
   color: #4B4B4B;
 }
 .cpal-card:hover h4{
@@ -1526,7 +1522,7 @@ tr:last-child> td:last-child{
   .calc-result>button {
     font: normal normal bold 16px/24px Roboto;
     width: 253px;
-    height: 44px;
+    height: 50px;
   }
 }
   
@@ -1754,7 +1750,7 @@ tr:last-child> td:last-child{
   .ptnr-item a{
     display: block;
     width: 195px;
-    height: 44px;
+    height: 50px;
     font: normal normal bold 16px/40px Roboto;
   }
   .ptnr-item a:hover{
