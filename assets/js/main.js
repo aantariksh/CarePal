@@ -250,8 +250,6 @@
 
 
 function toggleVideo(){
-  
-
   var videoPlayer = document.getElementById("video-player");
 
   if(videoPlayer.paused){
@@ -277,21 +275,52 @@ function moreScheme(e){
     }
 }
 
+const EMIInputs = [ 
+  document.getElementById('calc-value1'), 
+  document.getElementById('calc-value2'),
+  document.getElementById('calc-value3'),
+];
+
+const EMISliders = [ 
+  document.getElementById('calc-slider1'), 
+  document.getElementById('calc-slider2'),
+  document.getElementById('calc-slider3'),
+];
+
 function calcSlider(){
-   var mySlider1 = document.getElementById('calc-slider1');
-   var mySlider2 = document.getElementById('calc-slider2');
-   var mySlider3 = document.getElementById('calc-slider3');
+  console.log("calcSlider")
+   var percent1 = (EMISliders[0].value / EMISliders[0].max)*100;
+   var percent2 = ((EMISliders[1].value-EMISliders[1].min) / (EMISliders[1].max-EMISliders[1].min))*100;
+   var percent3 = ((EMISliders[2].value-EMISliders[2].min) / (EMISliders[2].max-EMISliders[2].min))*100;
 
-   var percent1 = (mySlider1.value / mySlider1.max)*100;
-   var percent2 = ((mySlider2.value-mySlider2.min) / (mySlider2.max-mySlider2.min))*100;
-   var percent3 = ((mySlider3.value-mySlider3.min) / (mySlider3.max-mySlider3.min))*100;
+   EMISliders[0].style.background = `linear-gradient( to right, #1E75BB ${percent1}%, rgba(28, 117, 188, .1) ${percent1}%)`;
+   EMISliders[1].style.background = `linear-gradient( to right, #1E75BB ${percent2}%, rgba(28, 117, 188, .1) ${percent2}%)`;
+   EMISliders[2].style.background = `linear-gradient( to right, #1E75BB ${percent3}%, rgba(28, 117, 188, .1) ${percent3}%)`;
 
-   mySlider1.style.background = `linear-gradient( to right, #1E75BB ${percent1}%, rgba(28, 117, 188, .1) ${percent1}%)`;
-   mySlider2.style.background = `linear-gradient( to right, #1E75BB ${percent2}%, rgba(28, 117, 188, .1) ${percent2}%)`;
-   mySlider3.style.background = `linear-gradient( to right, #1E75BB ${percent3}%, rgba(28, 117, 188, .1) ${percent3}%)`;
+   EMIInputs[0].value = EMISliders[0].value;
+   EMIInputs[1].value = EMISliders[1].value;
+   EMIInputs[2].value = EMISliders[2].value;
+   calculateEMI()
+}
 
-   document.getElementById('calc-value1').innerText = mySlider1.value;
-   document.getElementById('calc-value2').innerText = mySlider2.value;
-   document.getElementById('calc-value3').innerText = mySlider3.value;
-   document.getElementById('CalculatedEMI').innerHTML = "₹" + Math.round(mySlider1.value * (1/mySlider2.value + mySlider3.value/100));
+EMIInputs.forEach((inp, i)=>inp.addEventListener("input", () =>
+  updateSlider(i+1, inp.value)
+))
+
+function updateSlider(sliderId, value) {
+  console.log(sliderId, value)
+  const slider = document.getElementById(`calc-slider${sliderId}`);
+  const min = slider?.min || 0
+  const max = slider?.max || value
+  const percent = ((value - min) / (max - min))*100;
+  console.log(min, max, value, percent)
+  slider.style.background = `linear-gradient( to right, #1E75BB ${percent}%, rgba(28, 117, 188, .1) ${percent}%)`;
+  slider.value = value
+  calculateEMI()
+}
+
+function calculateEMI() {
+  console.log("CalculatedEMI")
+  const emi = document.getElementById('CalculatedEMI')
+  emi.innerHTML = "₹" + Math.round(EMIInputs[0].value * (1/EMIInputs[1].value + EMIInputs[2].value/100));
 }

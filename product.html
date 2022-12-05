@@ -80,31 +80,31 @@
             Avail Quick Loans With CarePal Money!
           </h1>
           <div class="contact-form prod-form row my-0">
-            <div class="form-field col-lg-6 order-first my-3">
+            <div class="form-field col-lg-6 order-first my-3 px-0 px-lg-2">
               <input type="text" id="name" class="prod-input-text" name="name" placeholder=" " required />
               <label for="name" class="label">Name*</label>
             </div>
-            <div class="form-field col-6 order-first my-3">
+            <div class="form-field col-6 order-first my-3 px-0 pe-2 px-lg-2">
               <input type="tel" id="telephone" class="prod-input-text" name="telephone" placeholder=" " pattern="[0-9]{10,12}" required />
               <label for="telephone" class="label">Telephone*</label>
             </div>
-            <div class="form-field col-lg-6 order-2 order-lg-1 my-3">
+            <div class="form-field col-lg-6 order-2 order-lg-1 my-3 px-0 px-lg-2">
               <input type="email" id="email" class="prod-input-text" name="email" placeholder=" " required />
               <label for="email" class="label">Email*</label>
             </div>
-            <div class="form-field col-lg-6 order-2 order-lg-1 my-3">
+            <div class="form-field col-lg-6 order-2 order-lg-1 my-3 px-0 px-lg-2">
               <input type="number" id="salary" class="prod-input-text" name="salary" placeholder=" " min="1" required />
               <label for="salary" class="label">Monthly Salary*</label>
             </div>
-            <div class="form-field col-6 order-1 order-lg-2 my-3">
+            <div class="form-field col-6 order-1 order-lg-2 my-3 pe-0 px-lg-2">
               <input type="number" id="loan-amt" class="prod-input-text" name="loanAmount" placeholder=" " min="1" required />
               <label for="loan-amt" class="label">Loan Amount*</label>
             </div>            
-            <div class="form-field col-lg-6 order-last my-3">
+            <div class="form-field col-lg-6 order-last my-3 px-0 px-lg-2">
               <input type="text" id="treatment" class="prod-input-text" name="treatment" placeholder=" " required />
               <label for="treatment" class="label">Treatment*</label>
             </div>
-            <div class="form-check col-lg-12 order-last py-2 mx-2">
+            <div class="form-check col-lg-12 order-last py-2">
               <input class="form-check-input cpal-check-input" type="checkbox" value="" id="cpal-terms-check" required/>
               <label class="prod-terms-check" for="cpal-terms-check">I confirm that I have read and agree to CarePal
                 Money’s
@@ -306,7 +306,7 @@
                         <th scope="col">Scheme</th>
                         <th scope="col">Tenure <br class="d-md-none"> (in months)</th>
                         <th scope="col">Advance EMI*</th>
-                        <th scope="col">Remaining EMI**</th>
+                        <th scope="col">Remaining <br class="d-md-none"> EMI**</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -505,14 +505,16 @@
                       <p>Loan Amount</p>
                       <div class="calc-amt-box">
                         <span class="border-end border-2 px-3"><i class="bi bi-currency-rupee"></i></span>
-                        <span class="px-2" id="calc-value1" contenteditable>50,000</span>
+                        <span class="p-0">
+                          <input id="calc-value1" type="number" min="5000" max="500000" value="5000"></input>
+                        </span>
                       </div>
                     </div>
 
                     <div>
                         <div class="calc-field d-flex align-items-center justify-content-between">
                             <div class="value-left">₹5k</div>
-                            <input type="range" id="calc-slider1" min="5000" max="500000" value="50000" step="10000"  oninput="calcSlider()">
+                            <input type="range" id="calc-slider1" min="5000" max="500000" value="5000" step="1" oninput="calcSlider()">
                             <div class="value-right">₹5L</div>
                         </div>
                     </div>
@@ -524,7 +526,9 @@
                     <div class="d-flex align-items-center justify-content-between mb-3">
                       <p>Tenure</p>
                       <div class="calc-amt-box">
-                        <span class="border-end border-2 px-3" id="calc-value2" contenteditable>12</span>
+                        <span class="p-0 border-end border-2">
+                          <input id="calc-value2" type="number" min="12" max="18" value="12"></input>
+                        </span>                        
                         <span class="px-2">Months</span>
                       </div>
                     </div>
@@ -542,9 +546,11 @@
                   <div class="emi-calc-item mt-3">
                     <div class="d-flex align-items-center justify-content-between mb-3">
                       <p>Interest Rate</p>
-                      <div class="calc-amt-box px-2">
-                        <span class="px-2 w-75 d-inline-block" id="calc-value3">0</span>
-                        <span class="border-start border-2 ps-0">%</span>
+                      <div class="calc-amt-box">
+                        <span class="p-0 border-end border-2">
+                          <input id="calc-value3" type="number" min="0" max="0" value="0"></input>
+                        </span>                        
+                        <span class="ps-2">%</span>
                       </div>
                     </div>
                     <div>
