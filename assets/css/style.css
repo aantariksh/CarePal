@@ -1928,3 +1928,13 @@ tr:last-child> td:last-child{
   color: #fff;
   text-decoration: none;
 }
+
+#WhyCarePalVideo {
+  width: 100% !important;
+  height: auto !important;
+}
+@media (max-width: 720px) {
+  #videoModal .modal-body {
+    padding: 0;
+  }
+}

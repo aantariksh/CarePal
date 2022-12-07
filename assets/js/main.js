@@ -245,22 +245,8 @@
   .then(text => {
       let modal = document.getElementById('terms-modal-content');
       if (modal) modal.innerHTML = text;
-  })
+  }).catch(e => {console.log(e)})
 })()
-
-
-function toggleVideo(){
-  var videoPlayer = document.getElementById("video-player");
-
-  if(videoPlayer.paused){
-    videoPlayer.play();
-    document.getElementById('vid-play-btn').style.display = "none";
-  }else{
-    videoPlayer.pause();
-    document.getElementById('vid-play-btn').style.display = "block";
-    videoPlayer.poster = "../img/homepage/work/video-thumbnail.png";
-  }
-} 
 
 function moreScheme(e){
    var moreBtn = document.getElementById('scheme-more-btn');
@@ -303,9 +289,11 @@ function calcSlider(){
    calculateEMI()
 }
 
-EMIInputs.forEach((inp, i)=>inp.addEventListener("input", () =>
-  updateSlider(i+1, inp.value)
-))
+EMIInputs.forEach((inp, i) => {
+  try {
+    inp.addEventListener("input", () => updateSlider(i+1, inp.value))
+  } catch {}
+})
 
 function updateSlider(sliderId, value) {
   console.log(sliderId, value)
@@ -323,4 +311,17 @@ function calculateEMI() {
   console.log("CalculatedEMI")
   const emi = document.getElementById('CalculatedEMI')
   emi.innerHTML = "₹" + Math.round(EMIInputs[0].value * (1/EMIInputs[1].value + EMIInputs[2].value/100));
+}
+
+const videoModal = document.getElementById('videoModal')
+if (videoModal) {
+  const videoElement = document.getElementById("WhyCarePalVideo")
+  videoModal.addEventListener('shown.bs.modal', event => {
+    videoElement.play()
+  })
+  
+  videoModal.addEventListener('hidden.bs.modal', event => {
+    videoElement.pause()
+    videoElement.currentTime = 0;
+  })
 }
