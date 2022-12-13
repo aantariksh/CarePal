@@ -311,7 +311,9 @@
                   <label class="form-check-label cpal-check-label" for="cpal-terms-check">I confirm that I have read and
                     agree to CarePal Money’s 
                     <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="text-white text-decoration-underline"
-                      style="cursor: pointer;">terms & conditions</a>.
+                      style="cursor: pointer;">terms & conditions</a>, 
+                    <a data-bs-toggle="modal" data-bs-target="#policyModal" class="text-white text-decoration-underline"
+                      style="cursor: pointer;">privacy policy</a>.                      
                     </label>
                 </div>
               </div>
@@ -320,11 +322,6 @@
               </div>
             </div>
           </div>
-          <p class="my-4 ctreat-form-para text-white">Loan tenure from 3-60 months with monthly interest varying from
-            1.33% - 2.5%. Annual Interest rates vary from 16% - 36%*. The standard processing fee varies from 2.5% to 4%
-            of the loan amount. For example, a loan of ₹50,000 with an APR of 18% and 24 month tenure total interest &
-            fees will be ₹11,679*. These numbers are indicative and final interest rate or processing fee may vary from
-            one user to another depending on the credit assessment.</p>
         </div>
       </div>
     </div>
@@ -342,7 +339,13 @@
           <div class="col-lg-5 col-md-6 footer-contact">
             <a href="index.html"><img width="184" height="48" src="assets/img/footer/footer-logo.png" alt=""
                 class="img-fluid"></a>
-            <p class="text-white my-3 d-none d-md-block">Copyright © 2022 CarePal Money. All rights reserved.</p>
+            <p class="text-white my-3 d-none d-md-block">Copyright © 2022 CarePal Money. All rights reserved
+              <br>
+              <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="text-white text-decoration-underline"
+                style="cursor: pointer;font-size: 0.8em;">Terms & Conditions</a>, 
+              <a data-bs-toggle="modal" data-bs-target="#policyModal" class="text-white text-decoration-underline"
+                style="cursor: pointer;font-size: 0.8em;">Privacy Policy</a>. 
+            </p>
           </div>
           <div class="col-lg-7 col-12">
             <div class="row">
@@ -368,7 +371,13 @@
             </div>
           </div>
         </div>
-        <p class="text-white d-md-none mt-3 mb-0">Copyright © 2022 CarePal Money. All rights reserved.</p>
+        <p class="text-white d-md-none mt-3 mb-0">Copyright © 2022 CarePal Money. All rights reserved
+          <br>
+          <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="text-white text-decoration-underline"
+            style="cursor: pointer;font-size: 0.8em;">Terms & Conditions</a>, 
+          <a data-bs-toggle="modal" data-bs-target="#policyModal" class="text-white text-decoration-underline"
+            style="cursor: pointer;font-size: 0.8em;">Privacy Policy</a>. 
+        </p>
       </div>
     </div>
   </footer>
@@ -383,6 +392,16 @@
     </div>
   </div>
   <!-- TnC Modal Ends -->
+
+  <!-- Policy Modal -->
+  <div class="modal fade" id="policyModal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content" id="policy-modal-content">
+        <!-- To be loaded from terms.html -->
+      </div>
+    </div>
+  </div>
+  <!-- Policy Modal Ends -->
 
   <!-- Youtube Video -->
   <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">

@@ -992,7 +992,7 @@ span{
 
 .contact-form{
   position: relative;
-  margin:32px 0;
+  margin-bottom: 32px;
 }
 .form-field{
   position: relative;
@@ -1668,11 +1668,7 @@ tr:last-child> td:last-child{
   height: 550px;
   background-size: cover;
 }
-.team-item>img{
-  width: 291px;
-  height: 312px;
-  border-radius: 8px;
-}
+
 .team-item>div>h3{
   font: normal normal bold 19px/23px Roboto;
   color: #5D5D5D;
@@ -1770,7 +1766,7 @@ tr:last-child> td:last-child{
     color: #EE721D;
   }
   .cpal-main-head{
-    font: normal normal bold 26px/30px Roboto;
+    font: normal normal bold 26px/36px Roboto;
     color: rgba(30, 117, 187, 1);
     border-left:4px solid #1E75BB;
     padding-left:12px;
@@ -1810,7 +1806,7 @@ tr:last-child> td:last-child{
 }
 
 #footer .footer-top .footer-contact {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 #footer .footer-top h4 {

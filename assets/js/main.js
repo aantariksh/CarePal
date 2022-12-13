@@ -246,6 +246,14 @@
       let modal = document.getElementById('terms-modal-content');
       if (modal) modal.innerHTML = text;
   }).catch(e => {console.log(e)})
+
+  // Load Policy from dedicated HTML file
+  fetch('policy.html')
+  .then(res => res.text())
+  .then(text => {
+      let modal = document.getElementById('policy-modal-content');
+      if (modal) modal.innerHTML = text;
+  }).catch(e => {console.log(e)})
 })()
 
 function moreScheme(e){
