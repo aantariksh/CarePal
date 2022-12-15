@@ -992,7 +992,7 @@ span{
 
 .contact-form{
   position: relative;
-  margin-bottom: 32px;
+  margin: 0 0 32px 0;
 }
 .form-field{
   position: relative;
@@ -1722,6 +1722,13 @@ tr:last-child> td:last-child{
     background-size: cover;
   }
   
+  .card-img-top{
+    width: 165px;
+    height: 177px;
+    margin: auto;
+    border-radius: 8px;
+  }
+
   .team-item>img{
     width: 165px;
     height: 177px;
