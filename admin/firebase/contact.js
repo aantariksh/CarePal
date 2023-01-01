@@ -9,7 +9,7 @@ import {
 const dbRef = ref(getDatabase());
 const contactTable = document.getElementById("contact-table");
 
-get(child(dbRef, `CarePal/contact`))
+get(child(dbRef, `contact`))
   .then((snapshot) => {
     if (snapshot.exists()) {
       displayData(snapshot.val());
@@ -46,7 +46,7 @@ function displayData(data) {
 function displayMessage(msg) {
   contactTable.innerHTML = `
     <tr>
-      <td colspan="5" class="text-center">
+      <td colspan="8" class="text-center">
         ${msg}
       </td>
     </tr>`;

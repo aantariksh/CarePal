@@ -38,7 +38,7 @@ contactForm.addEventListener("submit", function (event) {
 function submitContactForm(formData) {
   const id = new Date().getTime();
 
-  set(ref(db, `CarePal/contact/${id}`), {
+  set(ref(db, `contact/${id}`), {
     name: formData.name,
     telephone: formData.telephone,
     email: formData.email,

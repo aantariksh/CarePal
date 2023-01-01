@@ -1,13 +1,14 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBjjcGqcDnquyTmeHlfXn7N6zJORGHJ7Bg",
-  authDomain: "care-pal-aantariksh.firebaseapp.com",
-  databaseURL: "https://care-pal-aantariksh-default-rtdb.firebaseio.com",
-  projectId: "care-pal-aantariksh",
-  storageBucket: "care-pal-aantariksh.appspot.com",
-  messagingSenderId: "129436487219",
-  appId: "1:129436487219:web:3ed0daf6f919c59ba81d46",
+  apiKey: "AIzaSyDyI2ZbSNvroxft3lpAjdQkfinMeJqd5vA",
+  authDomain: "carepalmoney-website.firebaseapp.com",
+  databaseURL: "https://carepalmoney-website-default-rtdb.firebaseio.com",
+  projectId: "carepalmoney-website",
+  storageBucket: "carepalmoney-website.appspot.com",
+  messagingSenderId: "194255814168",
+  appId: "1:194255814168:web:3f97f66841212f8ed64d6d",
+  measurementId: "G-199P31Y6J8"
 };
 
 export const app = initializeApp(firebaseConfig);
