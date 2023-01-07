@@ -83,7 +83,7 @@
   const scrollto = (el) => {
     let header = select('#header')
     let selectProductsHeader = select('#navbar-example2')
-    let offset = header.offsetHeight + selectProductsHeader?.offsetHeight || 0
+    let offset = header.offsetHeight + (selectProductsHeader?.offsetHeight || 0)
     console.log(header.offsetHeight, selectProductsHeader?.offsetHeight, offset)
 
     let elementPos = select(el).offsetTop

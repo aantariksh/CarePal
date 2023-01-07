@@ -27,6 +27,14 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
+  <style>
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active{
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -51,7 +59,7 @@
             <a class="nav-link" href="./about.html"><span>About Us</span></a>
           </li>
           <li>
-            <a class="nav-link" href="./index.html#cpal-treat-form"><span>Contact Us</span></a>
+            <a class="nav-link scrollto" href="./index.html#cpal-treat-form"><span>Contact Us</span></a>
           </li>
           <div class="border-top border-1 pt-4 mobile-nav-info">
             <div class="py-2 px-4 d-flex align-items-start">
@@ -81,11 +89,13 @@
           </h1>
           <div class="contact-form prod-form row my-0">
             <div class="form-field col-lg-6 order-first my-3 px-0 px-lg-2">
-              <input type="text" id="name" class="prod-input-text" name="name" placeholder=" " required />
+              <input type="text" id="name" class="prod-input-text" name="name" placeholder=" " required 
+                pattern="[a-z A-Z]+"  title="Please enter only Alphabets." />
               <label for="name" class="label">Name*</label>
             </div>
             <div class="form-field col-6 order-first my-3 px-0 pe-2 px-lg-2">
-              <input type="tel" id="telephone" class="prod-input-text" name="telephone" placeholder=" " pattern="[0-9]{10,12}" required />
+              <input type="tel" id="telephone" class="prod-input-text" name="telephone" placeholder=" " required
+                pattern="[0-9]{10,12}" title="Please enter 10 or 12 numbers." />
               <label for="telephone" class="label">Telephone*</label>
             </div>
             <div class="form-field col-lg-6 order-2 order-lg-1 my-3 px-0 px-lg-2">
@@ -97,7 +107,7 @@
               <label for="salary" class="label">Monthly Salary*</label>
             </div>
             <div class="form-field col-6 order-1 order-lg-2 my-3 pe-0 px-lg-2">
-              <input type="number" id="loan-amt" class="prod-input-text" name="loanAmount" placeholder=" " min="1" required />
+              <input type="number" id="loan-amt" class="prod-input-text" name="loanAmount" placeholder=" " min="5000" required />
               <label for="loan-amt" class="label">Loan Amount*</label>
             </div>            
             <div class="form-field col-lg-6 order-last my-3 px-0 px-lg-2">
@@ -105,7 +115,7 @@
               <label for="treatment" class="label">Treatment*</label>
             </div>
             <div class="form-check col-lg-12 order-last py-2">
-              <input class="form-check-input cpal-check-input" type="checkbox" value="" id="cpal-terms-check" required/>
+              <input class="form-check-input cpal-check-input" type="checkbox" value="" name="terms" id="cpal-terms-check" required/>
               <label class="prod-terms-check" for="cpal-terms-check">I confirm that I have read and agree to CarePal
                 Money’s
                 <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="text-decoration-underline" style="cursor: pointer">terms & conditions</a>,

@@ -15,15 +15,14 @@ contactForm.addEventListener("submit", function (event) {
   
   const { name, telephone, email, salary, loanAmount, treatment } = formData;
 
-  if (
-    !name ||
-    !telephone ||
-    !email ||
-    !salary ||
-    !loanAmount ||
-    !treatment ||
-    !name.trim() ||
-    !treatment.trim()
+  if (!formData?.terms) {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Please accept the terms to proceed.",
+    });
+  } else if (!name || !telephone || !email || !salary || 
+    !loanAmount || !treatment || !name.trim() || !treatment.trim()
   ) {
     Swal.fire({
       icon: "error",

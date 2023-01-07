@@ -26,7 +26,17 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <style>
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active{
+        -webkit-box-shadow: 0 0 0 30px #1E75BB inset !important;
+    }
+    input:-webkit-autofill{
+      -webkit-text-fill-color: white !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -48,7 +58,7 @@
           </li>
           <li><a class="nav-link" href="./product.html"><span>Product</span></a></li>
           <li><a class="nav-link" href="./about.html"><span>About Us</span></a></li>
-          <li><a class="nav-link" href="./index.html#cpal-treat-form"><span>Contact Us</span></a></li>
+          <li><a class="nav-link scrollto" href="./index.html#cpal-treat-form"><span>Contact Us</span></a></li>
           <div class="border-top border-1 pt-4 mobile-nav-info">
             <div class="py-2 px-4 d-flex align-items-start"><img src="./assets/img/Icons/header/header-call.svg" class="pe-2" alt="call" /> 1800 121
               8200</div>
@@ -282,11 +292,13 @@
             <div class="col-lg-6 col-sm-12">
               <div class="contact-form row">
                 <div class="form-field col-lg-6 order-first my-3 my-lg-4 px-0 pe-lg-3">
-                  <input type="text" id="name" class="input-text" name="name" placeholder=" " required />
+                  <input type="text" id="name" class="input-text" name="name" placeholder=" " required
+                    pattern="[a-z A-Z]+"  title="Please enter only Alphabets." />
                   <label for="name" class="label">Name*</label>
                 </div>
                 <div class="form-field col-6 order-first my-3 my-lg-4 px-0 pe-2 pe-lg-0">
-                  <input type="tel" id="telephone" class="input-text" name="telephone" placeholder=" " pattern="[0-9]{10,12}" required />
+                  <input type="tel" id="telephone" class="input-text" name="telephone" placeholder=" " required
+                    pattern="[0-9]{10,12}" title="Please enter 10 or 12 numbers." />
                   <label for="telephone" class="label">Telephone*</label>
                 </div>
                 <div class="form-field col-lg-6 order-2 order-lg-1 my-3 my-lg-4 px-0 pe-lg-3">
@@ -298,7 +310,7 @@
                   <label for="salary" class="label">Monthly Salary (in ₹)*</label>
                 </div>
                 <div class="form-field col-6 order-1 order-lg-2 my-3 my-lg-4 ps-lg-0 pe-0 pe-lg-3">
-                  <input type="number" id="loan-amt" class="input-text" name="loanAmount" placeholder=" " required />
+                  <input type="number" id="loan-amt" class="input-text" name="loanAmount" placeholder=" " min="5000" required />
                   <label for="loan-amt" min="1" class="label">Loan Amount*</label>
                 </div>
                 <div class="form-field col-lg-6 order-last my-3 my-lg-4 px-0">
@@ -307,14 +319,14 @@
                 </div>
 
                 <div class="form-check col-lg-12 order-last">
-                  <input class="form-check-input cpal-check-input" type="checkbox" value="" id="cpal-terms-check" required />
+                  <input class="form-check-input cpal-check-input" type="checkbox" name="terms" id="cpal-terms-check" required />
                   <label class="form-check-label cpal-check-label" for="cpal-terms-check">I confirm that I have read and
-                    agree to CarePal Money’s 
+                    agree to CarePal Money's 
                     <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="text-white text-decoration-underline"
                       style="cursor: pointer;">terms & conditions</a>, 
                     <a data-bs-toggle="modal" data-bs-target="#policyModal" class="text-white text-decoration-underline"
                       style="cursor: pointer;">privacy policy</a>.                      
-                    </label>
+                  </label>
                 </div>
               </div>
               <div class="mt-3 ps-0 text-center">
@@ -407,6 +419,9 @@
   <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content" id="videoModal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>        
         <div class="modal-body">
           <video controls id="WhyCarePalVideo">
             <source src="./assets/WhyCarePal.mp4" type="video/mp4">
