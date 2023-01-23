@@ -1759,7 +1759,7 @@ tr:last-child> td:last-child{
     width: 195px;
   }
   .ptnr-item>div>img{
-    width: 180px;
+    /* width: 180px; */
     height: 60px;
   }
   .ptnr-item a{
