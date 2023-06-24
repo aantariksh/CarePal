@@ -37,14 +37,19 @@ contactForm.addEventListener("submit", function (event) {
 function submitContactForm(formData) {
   const id = new Date().getTime();
 
-  set(ref(db, `contact/${id}`), {
+  const formContents = {
     name: formData.name,
     telephone: formData.telephone,
     email: formData.email,
     salary: formData.salary,
     treatment: formData.treatment,
     loanAmount: formData.loanAmount
-  })
+  }
+
+  // Save to Firebase
+  set(ref(db, `contact/${id}`), formContents)
+    // Send Email
+    .then(() => axios.post('https://carepalmoney.com/send-email', formContents))
     .then(successMessage)
-    .catch((err) => failMessage(err));
+    .catch((err) => console.log(err));
 }
