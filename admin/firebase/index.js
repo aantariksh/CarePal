@@ -25,11 +25,12 @@ const loginForm = document.getElementById("login-form");
 if (loginForm) {
   loginForm.addEventListener("submit", function (event) {
     event.preventDefault();
-    const formProps = new FormData(event.target);
-    const formData = Object.fromEntries(formProps);
-    signInWithEmailAndPassword(auth, formData.email, formData.password)
-      .then(() => (location.href = "/admin/contact.html"))
-      .catch(() => failMessage());
+    alert("Service has been disabled by the Admin.")
+    // const formProps = new FormData(event.target);
+    // const formData = Object.fromEntries(formProps);
+    // signInWithEmailAndPassword(auth, formData.email, formData.password)
+    //   .then(() => (location.href = "/admin/contact.html"))
+    //   .catch(() => failMessage());
   });
 }
 
@@ -39,6 +40,7 @@ if (loginOutButton) {
 }
 
 onAuthStateChanged(auth, (user) => {
+  signOut(auth)
   const index = "/admin/index";
   const contact = "/admin/contact";
   const currentPage = location.pathname;

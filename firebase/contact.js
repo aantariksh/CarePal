@@ -1,11 +1,13 @@
-import { successMessage, failMessage, app } from "./index.js";
-import {
-  getDatabase,
-  set,
-  ref,
-} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
+import { successMessage, 
+  // failMessage, app 
+} from "./index.js";
+// import {
+//   getDatabase,
+//   set,
+//   ref,
+// } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
 
-const db = getDatabase(app);
+// const db = getDatabase(app);
 const contactForm = document.getElementById("contact-form");
 
 contactForm.addEventListener("submit", function (event) {
@@ -47,9 +49,10 @@ function submitContactForm(formData) {
   }
 
   // Save to Firebase
-  set(ref(db, `contact/${id}`), formContents)
-    // Send Email
-    .then(() => axios.post('https://carepalmoney.com/send-email', formContents))
+  // set(ref(db, `contact/${id}`), formContents)
+  //   .then(() => axios.post('https://carepalmoney.com/send-email', formContents))
+  // Send Email
+  axios.post('https://carepalmoney.com/send-email', formContents)
     .then(successMessage)
     .catch((err) => console.log(err));
 }
